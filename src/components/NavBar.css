@@ -1,4 +1,8 @@
 /* Navbar.css */
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+}
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
@@ -6,10 +10,10 @@
   
   .nav-link {
     font-size: 18px;
-    color: #333; /* Change color as needed */
+    color: #3f3776 !important;  /* Change color as needed */
   }
   
   .nav-link:hover {
-    color: #555; /* Change color as needed */
+    color: #5d4ecf !important;  /* Change color as needed */
   }
   
