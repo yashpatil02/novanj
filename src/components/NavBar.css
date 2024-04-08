@@ -1,11 +1,12 @@
 /* Navbar.css */
 
 .navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.205); /* Adjust shadow properties as needed */
+/* background-color: rgb(255, 255, 255) !important; */
 }
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
+.navbar-brand img {
+ width: 140px;
+ /* height: 40px; */
   }
   
   .nav-link {
@@ -17,3 +18,12 @@
     color: #5d4ecf !important;  /* Change color as needed */
   }
   
+  /* NavBar.css */
+.navbar-light .nav-link {
+  color: #fffffe !important; /* Set default color to white */
+  
+}
+
+.navbar-light.scrolled .nav-link {
+  color: rgb(82, 18, 117) !important; /* Change color when scrolled */
+}
