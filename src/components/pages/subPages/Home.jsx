@@ -18,7 +18,7 @@ const Home = () => {
     <div>
     <div className="bg-image-container">
       <div className="heading1">
-        <span className='sport'>Sports</span> 
+        <span className='sport'>Sports</span>
         <span className='analysis'>Analysis</span>
       </div>
       <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" />

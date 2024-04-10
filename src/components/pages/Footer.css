@@ -1,0 +1,44 @@
+/* Define reusable classes */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 25%;
+}
+
+.footer-heading {
+  color: #fff;
+}
+
+.footer-list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-list li a:hover {
+  color: #ccc;
+}
+
+.footer-divider {
+  border-top: 3px solid #888888;
+}
+.carousel-img {
+width: 50%;
+height: 50%;
+  /* max-width: 100%; Set the maximum width of the images */
+  /* height: 80%; Maintain the aspect ratio */
+  /* Add any additional styling here */
+}
