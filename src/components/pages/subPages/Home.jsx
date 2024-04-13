@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons'; // Using faArrowAltCircleUp icon instead of faArrowUp
 import './Home.css';
 import './MediaQueri.css'
-
+import { TweenMax, Expo } from 'gsap';
 const Home = () => {
   const [index, setIndex] = useState(0);
   const [counts, setCounts] = useState([]);
@@ -72,6 +72,16 @@ const Home = () => {
       behavior: 'smooth'
     });
   };
+
+
+  useEffect(() => {
+    TweenMax.to(".sport",  {
+        x: 30,
+        opacity: 1,
+        ease: Expo.easeInOut
+    });
+
+}, []);
 
 
 
