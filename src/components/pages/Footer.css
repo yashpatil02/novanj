@@ -42,3 +42,25 @@ height: 50%;
   /* height: 80%; Maintain the aspect ratio */
   /* Add any additional styling here */
 }
+/* Add this CSS to your external CSS file */
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-media-icons li:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
+}
+
+.footer-section .social-media-icons {
+  float: right; /* Float the social media icons to the right */
+}
+.footer-hr{
+float: right;
+}
