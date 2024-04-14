@@ -55,7 +55,8 @@ const CustomNavbar = () => {
               <Nav.Link eventKey="link-3" as={Link} to="/services">Services</Nav.Link>
             </Nav.Item>
             <Nav.Item className='me-4'>
-              <Nav.Link eventKey="link-4" onClick={() => scrollToSection('contact')}>Contact</Nav.Link>
+              {/* <Nav.Link eventKey="link-4" onClick={() => scrollToSection('contact')}>Contact</Nav.Link> */}
+              <Nav.Link eventKey="link-4" as={Link} to="/contact">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

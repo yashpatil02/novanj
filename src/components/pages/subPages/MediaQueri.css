@@ -26,7 +26,7 @@
         /* font-size: ; */
         font-weight: 500;
         /* margin-right: 20px; */
-        margin-left: 8rem;
+        margin-left: 8vw;
         animation: slideInRight 8s ease forwards;
       }
       .analysis{
@@ -100,14 +100,89 @@
   
   }
 
+  @media only screen and (max-width: 1200px) {
+
+   
+
+    .heading1 {
+      color: #b38600;
+      font-size: 12vw;
+      position: relative;
+      /* top: 170px; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-55%, -90%);
+      font-weight: 500;
+      font-family: "Oswald", sans-serif;
+    
+    }
+
+    .sport{
+        /* font-size: ; */
+        font-weight: 500;
+        /* margin-right: 20px; */
+        margin-left: 8vw;
+        animation: slideInRight 8s ease forwards;
+      }
+      .analysis{
+        font-weight: 500;
+       /* font-size: 12rem; */
+       animation: slideInLeft 8s ease forwards;
+      }
+      
+
+    .bg-image {
+        width: 42vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-54%,-50%);
+       
+      }
+  
+  }
 
 
   @media only screen and (max-width: 1000px) {
-      body {
-          height: unset;
-          margin: 60px auto;
+    
+    .heading1 {
+      color: #b38600;
+      font-size: 10vw;
+      position: relative;
+      /* top: 170px; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-55%, -90%);
+      font-weight: 500;
+      font-family: "Oswald", sans-serif;
+    
+    }
+
+    .sport{
+        /* font-size: ; */
+        font-weight: 500;
+        /* margin-right: 20px; */
+        margin-left: 8vw;
+        animation: slideInRight 8s ease forwards;
       }
-      header h3 {text-align: center;font-size: 22px;}
-      main {flex-direction: column;}
+      .analysis{
+        font-weight: 500;
+       /* font-size: 12rem; */
+       animation: slideInLeft 8s ease forwards;
+      }
+      
+
+    .bg-image {
+        width: 42vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-54%,-50%);
+       
+      }
+      .text-right {
+        display: none;
+      }
+  
   }
   
