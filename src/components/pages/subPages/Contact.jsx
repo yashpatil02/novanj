@@ -1,73 +1,84 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import './Contact.css';
+import emailjs from 'emailjs-com'; // import emailjs library
 
 function Contact() {
+  const form = useRef(); // create a ref for the form
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    // Initialize EmailJS with your user ID
+    emailjs.init("fIhHFJiGjCy__Rsrj");
+  
+    emailjs
+      .sendForm('service_k49jwwi', 'template_93x28a9', form.current)
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+          // Reset the form
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('An error occurred, please try again later.');
+        },
+      );
+  };
+
   return (
-    <div>
-      <h1>contact</h1>
-
-      <header>
-        <h3 className="text-lighter">Reliable, efficient delivery</h3>
-        <h3 className="text-bold">Powered by Technology</h3>
-        <p className="text-muted">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-      </header>
-
-      <main className='mainsection '>
-        <div className="section">
-          <div className="card card-supervisor">
-            <div className="card-body">
-              <div className="card-title text-bold">Supervisor</div>
-              <div className="card-text text-muted">Monitors activity to identify project roadblocks</div>
+    <>
+      <div className="container">
+        <div className="innerwrap">
+          <section className="section1 clearfix">
+            <div className="textcenter">
+              <span className="shtext">Contact Us</span>
+              <span className="seperator"></span>
+              <h1>Drop Us a Mail</h1>
             </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-supervisor.svg" alt="" />
+          </section>
+
+          <section className="section2 clearfix">
+            <div className="col2 column1 first">
+              <div className="sec2map">
+                {/* Google Map */}
+                <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.043472937807!2d73.76290777599428!3d19.964673923472485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd95a018d6f29d%3A0x2514ae74028039a5!2sPrivan%20Sports%20Analyzer!5e0!3m2!1sen!2sin!4v1713082151721!5m2!1sen!2sin" width="100%" height="550" style={{ border: 0 }} allowFullScreen="" loading="lazy"></iframe>
+
               </div>
             </div>
-          </div>
+            <div className="col2 column2 last">
+              <div className="sec2innercont">
+                <div className="sec2addr">
+                  <p>1st floor, Jay Plaza, Back side of Domino's, Privan Sports analyer Pvt Ltd, Rane Nagar, Nashik, Maharashtra 422009</p>
+                  <p><span className="collig">Phone :</span> +91 976885083</p>
+                  <p><span className="collig">Email :</span> yashpatil121199@gmail.com</p>
+                  <p><span className="collig">Fax :</span> +91 97688509</p>
+                </div>
+              </div>
+              <div className="sec2contactform">
+                <h3 className="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="clearfix">
+                    <input className="col2 first" type="text" placeholder="First Name" name="firstName" />
+                    <input className="col2 last" type="text" placeholder="Last Name" name="lastName" />
+                  </div>
+                  <div className="clearfix">
+                    <input className="col2 first" type="email" placeholder="Email" name="email" />
+                    <input className="col2 last" type="text" placeholder="Contact Number" name="contactNumber" />
+                  </div>
+                  <div className="clearfix">
+                    <textarea name="message" id="" cols="30" rows="7" placeholder="Your message here..."></textarea>
+                  </div>
+                  <div className="clearfix"><input type="submit" value="Send" /></div>
+                </form>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <div className="section">
-          <div className="card card-team_builder">
-            <div className="card-body">
-              <div className="card-title text-bold">Team Builder</div>
-              <div className="card-text text-muted">Scans our talent network to create the optimal team for your project</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-team-builder.svg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-karma">
-            <div className="card-body">
-              <div className="card-title text-bold">Karma</div>
-              <div className="card-text text-muted">Regularly evaluates our talent to ensure quality</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-karma.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="section">
-          <div className="card card-calculator">
-            <div className="card-body">
-              <div className="card-title text-bold">Calculator</div>
-              <div className="card-text text-muted">Uses data from past projects to provide better delivery estimates</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-calculator.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+    </>
   )
 }
 
-export default Contact
+export default Contact;

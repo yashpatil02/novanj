@@ -95,7 +95,7 @@ const Home = () => {
       <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid  />
       <div className="overlay">
         <div className="text-white">
-          <p className='text-right'>Lorem ipsum dolor, sit amet consectetur  elit. <br /> nulla magni sunt quos numquam unde fugit?</p>
+          <p className='text-right'>we're not just watching the game <br /> – we're redefining it.</p>
         </div>
         <a className='scroll-down'> <FontAwesomeIcon icon={faAngleDown} /></a>
 
@@ -105,8 +105,8 @@ const Home = () => {
 
     {/*-------------------- try code is here ----------------------------- */}
 
-   <section className='fourcard'>
-   <header>
+  <section className='fourcard'>
+  <header>
         <h3 className="text-lighter">Reliable, efficient delivery</h3>
         <h3 className="text-bold">Powered by Technology</h3>
         <p className="text-muted">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
@@ -168,13 +168,19 @@ const Home = () => {
         </div>
       </main>
 
-   </section>
+
+  </section>
+  
    
 
 {/* testimonial code is here ------------------------------------- */}
 
 
       <div className="main">
+        <Row  className="justify-content-center ">
+
+       <Col md={4} sm={12} className='mt-5'>
+      
       <div className="profile-card">
         <div className="img">
           <img src="https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg" alt="Profile" />
@@ -189,6 +195,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </Col>
+      <Col md={4} sm={12} className='mt-5'>
       <div className="profile-card">
         <div className="img">
           <img src="https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg" alt="Profile" />
@@ -203,6 +211,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      </Col>
+
+      <Col md={4} sm={12} className='mt-5'>
       <div className="profile-card">
         <div className="img">
           <img src="https://1.bp.blogspot.com/-8c7QTLoyajs/YLjr2V6KYRI/AAAAAAAACO8/ViVPQpLWVM0jGh3RZhh-Ha1-1r3Oj62wQCNcBGAsYHQ/s16000/team-1-3.jpg" alt="Profile" />
@@ -217,6 +229,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      </Col>
+      </Row>
       {/* Add more profile cards here */}
     </div>
 
