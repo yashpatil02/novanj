@@ -3,11 +3,11 @@ import './Footer.css'; // Import your CSS file
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 
 function Footer() {
-// Array of image paths
-const imagePaths = [
-    '/assets/images/1.png',
-    '/assets/images/ballb.png',
-];
+    // Array of image paths
+    const imagePaths = [
+        '/assets/images/1.png',
+        '/assets/images/ballb.png',
+    ];
     return (
         <div className="footer">
             <Container>
@@ -42,13 +42,31 @@ const imagePaths = [
                             <Carousel>
                                 {imagePaths.map((imagePath, index) => (
                                     <Carousel.Item key={index}>
-                                        <img className="carousel-img" src={imagePath} alt={`Slide ${index + 1}`}   />
+                                        <img className="carousel-img" src={imagePath} alt={`Slide ${index + 1}`} />
                                     </Carousel.Item>
                                 ))}
                             </Carousel>
                         </Col>
                     </Row>
                     <hr className="footer-divider" />
+                    <Row>
+                        <Col md={6}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quos!</Col>
+                        <Col md={6} className="footer-hr">
+                            <h5 className="footer-heading">Social Media</h5>
+                            <ul className="social-media-icons">
+                                {/* WhatsApp */}
+                                <li><a href="#"><i className="fab fa-whatsapp"></i></a></li>
+                                {/* Instagram */}
+                                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                {/* LinkedIn */}
+                                <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                                {/* Facebook */}
+                                <li><a href="#"><i className="fab fa-facebook"></i></a></li>
+                                {/* Twitter */}
+                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </Col>
+                    </Row>
                 </footer>
             </Container>
         </div>
@@ -56,3 +74,6 @@ const imagePaths = [
 }
 
 export default Footer;
+
+
+
