@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons'; 
+import { faAngleDown, faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import './About.css';
 
 function About() {
@@ -23,7 +23,7 @@ function About() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -36,49 +36,49 @@ function About() {
   return (
     <>
 
-   
-    <Carousel  style={{ marginTop: '-88px' }}>
-      <Carousel.Item interval={1000}>
-      <img
+
+      <Carousel style={{ marginTop: '-88px' }}>
+        <Carousel.Item interval={1000}>
+          <img
             className="d-block w-100 carousel-image"
             src="assets/images/bg-3.jpg"
             alt="First slide"
           />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-      <img
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={500}>
+          <img
             className="d-block w-100 carousel-image"
             src="assets/images/bg-3.jpg"
             alt="First slide"
           />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
             className="d-block w-100 carousel-image"
             src="assets/images/bg-3.jpg"
             alt="First slide"
           />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
 
 
 
 
-    
+
       <section className='about'>
 
         <Container >
@@ -171,90 +171,90 @@ function About() {
           </div>
 
           <section className='cmpnyImg'>
-        <h3 className='ourcom'>Our Company</h3>
-        <p className='welcomecom'>Welcome to Novanj Sports Annotations, where every game tells a story. Whether you're here to relive the glory moments or catch up on the latest action, Novanj is your ultimate destination for in-depth analysis and captivating commentary. Get ready to immerse yourself in the world of sports like never before. Let's make every match unforgettable together!</p>
-        <div className='ourImg'>
-          <Row>
-            <Col md={3} sm={6} >
-              <Image
-                src="https://source.unsplash.com/busy-office-workers-are-sitting-around-table-and-doing-their-job-together-concentrated-woman-is-typing-on-laptop-V9MGtweTl90"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 1"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/man-standing-in-front-of-people-sitting-beside-table-with-laptop-computers-gMsnXqILjp4"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 2"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/people-sitting-on-chair-in-front-of-computer-YI_9SivVt_s"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 3"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/white-corner-desk-PG8NyM_Mcts"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 4"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/man-standing-behind-flat-screen-computer-monitor-bzqU01v-G54"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 5"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/man-sitting-on-chair-wearing-gray-crew-neck-long-sleeved-shirt-using-apple-magic-keyboard-CPs2X8JYmS8"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 6"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/group-of-people-using-laptop-computer-QckxruozjRg"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 7"
-              />
-            </Col>
-            <Col md={3} sm={6}>
-              <Image
-                src="https://source.unsplash.com/person-holding-pencil-near-laptop-computer-5fNmWej4tAA"
-                fluid
-                style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
-                className="zoomcmp img-compny grayscale"
-                alt="Company Image 8"
-              />
-            </Col>
-          </Row>
-        </div>
-      </section>
+            <h3 className='ourcom'>Our Company</h3>
+            <p className='welcomecom'>Welcome to Novanj Sports Annotations, where every game tells a story. Whether you're here to relive the glory moments or catch up on the latest action, Novanj is your ultimate destination for in-depth analysis and captivating commentary. Get ready to immerse yourself in the world of sports like never before. Let's make every match unforgettable together!</p>
+            <div className='ourImg'>
+              <Row>
+                <Col md={3} sm={6} >
+                  <Image
+                    src="https://source.unsplash.com/busy-office-workers-are-sitting-around-table-and-doing-their-job-together-concentrated-woman-is-typing-on-laptop-V9MGtweTl90"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 1"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/man-standing-in-front-of-people-sitting-beside-table-with-laptop-computers-gMsnXqILjp4"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 2"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/people-sitting-on-chair-in-front-of-computer-YI_9SivVt_s"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 3"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/white-corner-desk-PG8NyM_Mcts"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 4"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/man-standing-behind-flat-screen-computer-monitor-bzqU01v-G54"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 5"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/man-sitting-on-chair-wearing-gray-crew-neck-long-sleeved-shirt-using-apple-magic-keyboard-CPs2X8JYmS8"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 6"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/group-of-people-using-laptop-computer-QckxruozjRg"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 7"
+                  />
+                </Col>
+                <Col md={3} sm={6}>
+                  <Image
+                    src="https://source.unsplash.com/person-holding-pencil-near-laptop-computer-5fNmWej4tAA"
+                    fluid
+                    style={{ objectFit: 'cover', height: '100%', transition: 'transform 0.6s' }}
+                    className="zoomcmp img-compny grayscale"
+                    alt="Company Image 8"
+                  />
+                </Col>
+              </Row>
+            </div>
+          </section>
 
 
-      <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
-        <FontAwesomeIcon icon={faArrowAltCircleUp} />
-      </div>
+          <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
+            <FontAwesomeIcon icon={faArrowAltCircleUp} />
+          </div>
         </Container>
       </section>
 

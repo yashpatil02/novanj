@@ -7,10 +7,10 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
     // Initialize EmailJS with your user ID
     emailjs.init("fIhHFJiGjCy__Rsrj");
-  
+
     emailjs
       .sendForm('service_k49jwwi', 'template_93x28a9', form.current)
       .then(

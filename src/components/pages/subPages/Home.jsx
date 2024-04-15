@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const countElements = document.querySelectorAll('.count');
     const countsArray = Array.from(countElements);
-    
+
     const intervals = countsArray.map((item) => {
       let startNumber = 0;
 
@@ -64,7 +64,7 @@ const Home = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); 
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -75,108 +75,108 @@ const Home = () => {
 
 
   useEffect(() => {
-    TweenMax.to(".sport",  {
-        x: 30,
-        opacity: 1,
-        ease: Expo.easeInOut
+    TweenMax.to(".sport", {
+      x: 30,
+      opacity: 1,
+      ease: Expo.easeInOut
     });
 
-}, []);
+  }, []);
 
 
 
   return (
     <div>
-    <section className="bg-image-container">
-      <div className="heading1">
-        <span className='sport p-5'>Sports</span>
-        <span className='analysis ps-4'>Analysis</span>
-      </div>
-      <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid  />
-      <div className="overlay">
-        <div className="text-white">
-          <p className='text-right'>we're not just watching the game <br /> – we're redefining it.</p>
+      <section className="bg-image-container">
+        <div className="heading1">
+          <span className='sport p-5'>Sports</span>
+          <span className='analysis ps-4'>Analysis</span>
         </div>
-        <a className='scroll-down'> <FontAwesomeIcon icon={faAngleDown} /></a>
-
-      </div>
-    </section>
-
-
-    {/*-------------------- try code is here ----------------------------- */}
-
-  <section className='fourcard'>
-  <header>
-        <h3 className="text-lighter">Reliable, efficient delivery</h3>
-        <h3 className="text-bold">Powered by Technology</h3>
-        <p className="text-muted">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-      </header>
-
-      <main className='mainsection '>
-        <div className="section">
-          <div className="card card-supervisor">
-            <div className="card-body">
-              <div className="card-title text-bold">Supervisor</div>
-              <div className="card-text text-muted">Monitors activity to identify project roadblocks</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-supervisor.svg" alt="" />
-              </div>
-            </div>
+        <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid />
+        <div className="overlay">
+          <div className="text-white">
+            <p className='text-right'>we're not just watching the game <br /> – we're redefining it.</p>
           </div>
-        </div>
+          <a className='scroll-down'> <FontAwesomeIcon icon={faAngleDown} /></a>
 
-        <div className="section">
-          <div className="card card-team_builder">
-            <div className="card-body">
-              <div className="card-title text-bold">Team Builder</div>
-              <div className="card-text text-muted">Scans our talent network to create the optimal team for your project</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-team-builder.svg" alt="" />
+        </div>
+      </section>
+
+
+      {/*-------------------- try code is here ----------------------------- */}
+
+      <section className='fourcard mt-5'>
+        <header>
+          <h3 className="text-lighter">Reliable, efficient delivery</h3>
+          <h3 className="text-bold">Powered by Technology</h3>
+          <p className="text-muted">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+        </header>
+
+        <main className='mainsection '>
+          <div className="section">
+            <div className="card card-supervisor">
+              <div className="card-body">
+                <div className="card-title text-bold">Supervisor</div>
+                <div className="card-text text-muted">Scans our talent network to create the optimal team for your project</div>
+              </div>
+              <div className="card-footer">
+                <div className="card-img">
+                  <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-supervisor.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="card card-karma">
-            <div className="card-body">
-              <div className="card-title text-bold">Karma</div>
-              <div className="card-text text-muted">Regularly evaluates our talent to ensure quality</div>
+          <div className="section">
+            <div className="card card-team_builder">
+              <div className="card-body">
+                <div className="card-title text-bold">Team Builder</div>
+                <div className="card-text text-muted">Scans our talent network to create the optimal team for your project</div>
+              </div>
+              <div className="card-footer">
+                <div className="card-img">
+                  <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-team-builder.svg" alt="" />
+                </div>
+              </div>
             </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-karma.svg" alt="" />
+
+            <div className="card card-karma">
+              <div className="card-body">
+                <div className="card-title text-bold">Karma</div>
+                <div className="card-text text-muted">Regularly evaluates our talent to ensure quality</div>
+              </div>
+              <div className="card-footer">
+                <div className="card-img">
+                  <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-karma.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="section">
-          <div className="card card-calculator">
-            <div className="card-body">
-              <div className="card-title text-bold">Calculator</div>
-              <div className="card-text text-muted">Uses data from past projects to provide better delivery estimates</div>
-            </div>
-            <div className="card-footer">
-              <div className="card-img">
-                <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-calculator.svg" alt="" />
+          <div className="section">
+            <div className="card card-calculator">
+              <div className="card-body">
+                <div className="card-title text-bold">Calculator</div>
+                <div className="card-text text-muted">Uses data from past projects to provide better delivery estimates</div>
+              </div>
+              <div className="card-footer">
+                <div className="card-img">
+                  <img src="https://rvs-four-card-feature-section.netlify.app/images/icon-calculator.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
 
-  </section>
-  
-   
-
-{/* testimonial code is here ------------------------------------- */}
+      </section>
 
 
-      <div className="main">
+
+      {/* testimonial code is here ------------------------------------- */}
+
+
+      {/* <div className="main">
         <Row  className="justify-content-center ">
 
        <Col md={4} sm={12} className='mt-5'>
@@ -232,53 +232,53 @@ const Home = () => {
 
       </Col>
       </Row>
-      {/* Add more profile cards here */}
-    </div>
+     
+    </div> */}
 
 
-{/* happy clint counter code is here ----------------------------------- */}
+      {/* happy clint counter code is here ----------------------------------- */}
 
-<div id="counter" className='px-4'>
-      <Row>
-        <Col md={6} lg={3}>
-          <Card className="card-supervisor">
-            <Card.Body>
-              <h1 className="count" data-number="50"></h1>
-              <Card.Title>Team Members</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6} lg={3}>
-          <Card className="card-supervisor">
-            <Card.Body>
-              <h1 className="count" data-number="15"></h1>
-              <Card.Title>Year+ Experience</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6} lg={3}>
-          <Card className="card-supervisor">
-            <Card.Body>
-              <h1 className="count" data-number="100"></h1>
-              <Card.Title>Projects Completed</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6} lg={3}>
-          <Card className="card-supervisor">
-            <Card.Body>
-              <h1 className="count" data-number="20"></h1>
-              <Card.Title>Happy Clients</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </div>
+      <div id="counter" className='px-4'>
+        <Row>
+          <Col md={6} lg={3}>
+            <Card className="card-supervisor">
+              <Card.Body>
+                <h1 className="count" data-number="50"></h1>
+                <Card.Title>Team Members</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} lg={3}>
+            <Card className="card-supervisor">
+              <Card.Body>
+                <h1 className="count" data-number="15"></h1>
+                <Card.Title>Year+ Experience</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} lg={3}>
+            <Card className="card-supervisor">
+              <Card.Body>
+                <h1 className="count" data-number="100"></h1>
+                <Card.Title>Projects Completed</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} lg={3}>
+            <Card className="card-supervisor">
+              <Card.Body>
+                <h1 className="count" data-number="20"></h1>
+                <Card.Title>Happy Clients</Card.Title>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </div>
 
-{/* back to top button code  */}
-  {/* Back to Top button */}
-    {/* Back to Top button */}
-    <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
+      {/* back to top button code  */}
+      {/* Back to Top button */}
+      {/* Back to Top button */}
+      <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
         <FontAwesomeIcon icon={faArrowAltCircleUp} />
       </div>
     </div>
