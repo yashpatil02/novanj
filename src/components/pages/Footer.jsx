@@ -5,16 +5,13 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap';
 function Footer() {
     // Array of image paths
     const imagePaths = [
-        '/assets/images/1.png',
-        '/assets/images/1.png',
-        '/assets/images/1.png',
-        '/assets/images/1.png',
-        '/assets/images/1.png',
-        '/assets/images/1.png',
-
-
+        '/assets/images/11.jpg',
+        '/assets/images/1.jpg',
+        '/assets/images/about2.jpg',
+        '/assets/images/portfolio-4.jpg',
+        '/assets/images/img-05.jpg',
+        '/assets/images/11.jpg',
     ];
-
     return (
         <div className="footer">
             <Container>
@@ -63,8 +60,8 @@ function Footer() {
                             <div className="row d-flex">
                                 {/* Map through imagePaths array and render each image */}
                                 {imagePaths.map((imagePath, index) => (
-                                    <div key={index} className="col-md-1 footer-box">
-                                        <img src={imagePath} alt={`Image ${index + 1}`} style={{ width: "100%", height: '100%' }} />
+                                    <div key={index} className=" footer-box">
+                                        <img src={imagePath} alt={`Image ${index + 1}`} style={{ width: "100%", height: '100%',objectFit:'cover' }} />
                                     </div>
                                 ))}
                             </div>
