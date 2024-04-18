@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
 /* Home.css */
 
 
@@ -12,7 +14,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+overflow: hidden;
   &::before {
     content: '';
     position: absolute;
@@ -157,15 +159,18 @@
 
 .text-lighter {
   font-weight: 200;
+  color: #27967A;
 }
 
 .text-bold {
   font-weight: 600;
+  color: #27967A;
 }
 
 .text-muted {
   font-weight: 400;
   color: hsl(229, 6%, 66%);
+    font-family: "Rubik", sans-serif;
 }
 
 header {
@@ -226,11 +231,11 @@ main .section {
 .card .card-body {}
 
 .card .card-body .card-title {
-  font-size: 17px;
+  font-size: 1.6rem;
 }
 
 .card .card-body .card-text {
-  font-size: 12px;
+  font-size: 1rem;
   margin-top: 8px;
 }
 
@@ -269,8 +274,10 @@ main .section {
   background-size: cover;
   /* Cover the entire container */
   background-position: center;
+  overflow: hidden;
   /* Center the image */
-  min-height: 100vh;
+  padding-top: 10px;
+  /* min-height: 100vh; */
   /* Ensure the container covers the entire viewport height */
   display: flex;
   flex-direction: column;
@@ -385,8 +392,11 @@ main .section {
   align-items: center;
   justify-content: center;
   background: #e6e6e7;
+  /* background: #27967A; */
   padding: 40px 0px;
   width: 100%;
+padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
 }
 
 #counter .item {
@@ -401,8 +411,8 @@ main .section {
   box-shadow: 0px 0px 38px -8px rgba(0, 0, 0, 0.34);
 }
 
-#counter .item .count {
-  color: #e8b12d;
+#counter .count {
+  color: #27967A;
   margin-bottom: 5px;
   font-size: 40px;
 }
@@ -410,6 +420,10 @@ main .section {
 #counter .item h3 {
   color: #4f4e28;
   text-transform: capitalize;
+}
+
+.card-box{
+  border-radius: 20px;
 }
 
 .back-to-top {
@@ -457,4 +471,120 @@ main .section {
   text-transform: uppercase;
   opacity: 0;
 
+}
+
+.tab-lap {
+  margin-top: 40px;
+overflow: hidden;
+}
+
+.tabLabDiv img {
+  width: 40vw;
+}
+
+.tablabText {
+  margin: 40px;
+  font-size: 1.3rem;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0px;
+}
+
+.teamgames {
+  color: #27967A;
+  text-align: start;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2.5em;
+  font-family: "Kalam", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.assist {
+  margin-top: 3rem;
+  overflow: hidden;
+  margin-bottom: 6rem;
+  /* margin-top: 2rem; */
+  background-color: #27967A;
+  color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.laptopbg {
+  width:40vw;
+  margin-left: 2rem;
+  position: relative;
+  /* left: 1rem; */
+
+
+}
+
+.teamheading {
+  text-align: start;
+  font-size: 1.3rem;
+  font-weight: 500;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Rubik", sans-serif;
+  line-height: 1.7;
+  margin-top: 40px;
+  
+}
+
+.teamtext {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  /* font-family: "Oswald", sans-serif; */
+   font-family: "Rubik", sans-serif;
+  margin-top: 40px;
+}
+
+.teamcon {
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Teko", sans-serif;
+  line-height: 1.4;
+  margin-top: 40px;
+ 
+}
+
+.whynovanj{
+  font-family: "Rubik", sans-serif;
+}
+
+.content{
+  overflow: hidden;
+  margin-top: 5rem;
+  margin-bottom: 40px;
+}
+
+.show1{
+  text-align: start;
+  /* font-family: "Oswald", sans-serif; */
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  color: #27967A;
+}
+.showtext{
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 400;
+  /* font-family: "Teko", sans-serif; */
+  font-family: "Oswald", sans-serif; 
+  /* font-family: "Rubik", sans-serif; */
+  margin-top: 20px;
+  color: #21252a;
+  
+}
+.fa-solid{
+font-size: 3rem;
+text-align: start;
+margin-bottom: 20px;
+color: #27967A;
 }
