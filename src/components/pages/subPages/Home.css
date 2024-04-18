@@ -587,3 +587,58 @@ text-align: start;
 margin-bottom: 20px;
 color: #27967A;
 }
+
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust the spacing between icons */
+  color: #B38600; /* Set the color of the icons */
+  font-size: 24px; /* Adjust the size of the icons */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease; /* Add transition for smooth animation */
+  padding: 10px; /* Add padding to make the clickable area larger */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  animation: moveUpDown .8s ease infinite alternate;
+}
+
+.social-icon-text {
+  display: none; /* Initially hide the text */
+  margin-left: 10px; /* Adjust the distance between icon and text */
+  font-size: 16px;
+  color: white !important;
+}
+
+.social-icon:hover {
+  background-color:#b3860080; /* Change the background color on hover */
+  transform: scale(1.05); /* Scale up the icon on hover */
+  box-shadow: 0 0 10px #b3860091; 
+  color: white;/* Add box-shadow on hover */
+}
+
+.social-icon:hover .social-icon-text {
+  display: inline; /* Display the text on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Change the background color of the text on hover */
+  padding: 5px 10px; /* Add padding to the text */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  color: white;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 50px; /* Adjust the distance from the bottom */
+  left: 30px; /* Adjust the distance from the left */
+  z-index: 1000; /* Ensure the icons are above other content */
+}
+.fb{
+  color: 	#1877F2;
+}
+.twitter{
+  color: 	#1DA1F2;
+}
+.insta{
+  color: #ee2a7b;
+}
+.linkd{
+  color:	#0077B5;
+}

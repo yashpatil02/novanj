@@ -10,7 +10,7 @@ import './MediaQueri.css'
 import { TweenMax, Expo } from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 const Home = () => {
@@ -108,23 +108,42 @@ const Home = () => {
 
   return (
     <div>
-      <section className="bg-image-container" >
-        <div className="heading1">
-          <span className='sport p-5'>Sports</span>
-          <span className='analysis ps-4'>Analysis</span>
-        </div>
+    <section className="bg-image-container">
+  <div className="heading1">
+    <span className='sport p-5'>Sports</span>
+    <span className='analysis ps-4'>Analysis</span>
+  </div>
 
-        <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid />
-        <div className="overlay">
-          <div className="text-white" data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
-            <p className='text-right'>we're not just watching the game <br /> – we're redefining it.</p>
-          </div>
-          <a className='scroll-down' href='#secondsection'> <FontAwesomeIcon icon={faAngleDown} /></a>
+  <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid />
+  <div className="overlay">
+    <div className="text-white" data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
+      <p className='text-right'>we're not just watching the game <br /> – we're redefining it.</p>
+    </div>
+    <a className='scroll-down' href='#secondsection'> <FontAwesomeIcon icon={faAngleDown} /></a>
+  </div>
 
-        </div>
+  {/* Social media icons */}
+  <div className="social-icons">
+  <a href="#" className="social-icon fb">
+    <FontAwesomeIcon icon={faFacebookF} />
+    <span className="social-icon-text">Facebook</span>
+  </a>
+  <a href="#" className="social-icon  twitter">
+    <FontAwesomeIcon icon={faTwitter} />
+    <span className="social-icon-text">Twitter</span>
+  </a>
+  <a href="#" className="social-icon insta">
+    <FontAwesomeIcon icon={faInstagram} />
+    <span className="social-icon-text">Instagram</span>
+  </a>
+  <a href="#" className="social-icon linkd">
+    <FontAwesomeIcon icon={faLinkedin} />
+    <span className="social-icon-text">Instagram</span>
+  </a>
+  {/* Add more social media icons as needed */}
+</div>
 
-      </section>
-
+</section>
 
       {/*-------------------- try code is here ----------------------------- */}
 

@@ -55,37 +55,42 @@ AOS.init({
     <>
 
 
+
 <Carousel style={{ marginTop: '-88px' }}>
-  <Carousel.Item interval={1000}>
+  <Carousel.Item interval={10000}>
     <img
       className="d-block w-100 carousel-image"
-      src="assets/images/newbg.jpg"
+      src="assets/images/about-top1.jpg"
       alt="First slide"
     />
     <Carousel.Caption className="carousel-caption">
       <h3>Novanj is on a mission to revolutionize the sports </h3>
+      <p>: We leverage the latest advancements in AI and machine learning to deliver unmatched accuracy and depth in our annotations.</p>
+     <a href="#abouts"> <button>Learn More </button></a>
       {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item interval={500}>
+  <Carousel.Item interval={5000}>
     <img
       className="d-block w-100 carousel-image"
-      src="assets/images/newbg2.jpg"
+      src="assets/images/about-top2.jpg"
       alt="First slide"
     />
     <Carousel.Caption className="carousel-caption">
       <h3>We strive to deliver unparalleled insights and analysis</h3>
+      <a href="#abouts"> <button>Learn More </button></a>
       {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item interval={5000}>
     <img
       className="d-block w-100 carousel-image"
-      src="assets/images/newbg3.jpg"
+      src="assets/images/about-top3.jpg"
       alt="First slide"
     />
     <Carousel.Caption className="carousel-caption">
       <h3>advanced data analytics and state-of-the-art technology</h3>
+      <a href="#abouts"> <button>Learn More </button></a>
       {/* <p>
         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
       </p> */}
@@ -98,17 +103,17 @@ AOS.init({
 
 
 
-      <section className='about'>
+      <section className='about' id='abouts'> 
 
         <Container >
           <Row >
             <Col md={6} >
-              <div  data-aos="slide-right" data-aos-duration="2000" data-aos-once="false">
+              <div >
                 <div className='text-start'>
 
-                  <span style={{ display: 'inline-block', width: '10%', backgroundColor: 'orangered', borderRadius: '5px', height: '5px', marginRight: '10px' }}
+                  <span style={{ display: 'inline-block', width: '10%', backgroundColor: '#27967A', borderRadius: '5px', height: '5px', marginRight: '10px' }}
                   />
-                  <h4 className='whatwedo'>What We Do</h4>
+                  <h4 className='whatwedo'  data-aos="fade-left" data-aos-duration="2000" data-aos-once="false">What We Do</h4>
                 </div>
                 <p className='whatwedotext'>
                   Through advanced data analytics and state-of-the-art technology, we meticulously annotate sports games, capturing key moments, statistics, and strategies. Our platform offers a dynamic and interactive experience, enabling users to engage with the game on a whole new level. At our core, we're pioneers in the realm of sports analytics, leveraging cutting-edge technology and meticulous data annotation to redefine how fans interact with their favorite games. Our process is both art and science, where every play, statistic, and strategic move is meticulously captured and analyzed.
@@ -164,7 +169,11 @@ AOS.init({
           </Row>
 
           {/*------------- seconds section -------------------------------- */}
+          <section className='wavecolor'>
+
+          
           <div className='wave'>
+          <Container>
             <Row>
               <Col md={6} >
                 <div className="wave-img"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="false">
@@ -176,7 +185,7 @@ AOS.init({
                 <div data-aos="fade-left" data-aos-duration="2000" data-aos-once="false">
                   <div className='text-start'>
 
-                    <span style={{ display: 'inline-block', width: '10%', backgroundColor: 'orangered', borderRadius: '5px', height: '5px', marginRight: '10px' }}
+                    <span style={{ display: 'inline-block', width: '10%', backgroundColor: '#27967A', borderRadius: '5px', height: '5px', marginRight: '10px' }}
                     />
                     <h4 className='OurMission'>Our Mission</h4>
                   </div>
@@ -186,9 +195,9 @@ AOS.init({
                 </div>
               </Col>
             </Row>
-
+        </Container>
           </div>
-
+          </section>
           <section className='cmpnyImg'>
             <h3 className='ourcom' data-aos="zoom-in" data-aos-duration="2000" data-aos-once="false">Our Company</h3>
             <p className='welcomecom'  data-aos="zoom-in" data-aos-duration="2000" data-aos-once="false" >Welcome to Novanj Sports Annotations, where every game tells a story. Whether you're here to relive the glory moments or catch up on the latest action, Novanj is your ultimate destination for in-depth analysis and captivating commentary. Get ready to immerse yourself in the world of sports like never before. Let's make every match unforgettable together!</p>
