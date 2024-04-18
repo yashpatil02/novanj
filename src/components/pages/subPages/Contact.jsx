@@ -1,16 +1,35 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com'; // import emailjs library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+
+
+});
+
   const form = useRef(); // create a ref for the form
 
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
     // Initialize EmailJS with your user ID
     emailjs.init("fIhHFJiGjCy__Rsrj");
-  
+
     emailjs
       .sendForm('service_k49jwwi', 'template_93x28a9', form.current)
       .then(
@@ -31,7 +50,7 @@ function Contact() {
     <>
       <div className="container">
         <div className="innerwrap">
-          <section className="section1 clearfix">
+          <section className="section1 clearfix" data-aos="fade-up">
             <div className="textcenter">
               <span className="shtext">Contact Us</span>
               <span className="seperator"></span>
