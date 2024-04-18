@@ -149,7 +149,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           <div className="section">
             <div className="card card-team_builder" data-aos="fade-up-up" data-aos-duration="1500" data-aos-once="false">
               <div className="card-body">
@@ -162,7 +161,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
             <div className="card card-karma" data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
               <div className="card-body">
                 <div className="card-title text-bold">Experience Ananlysis</div>
