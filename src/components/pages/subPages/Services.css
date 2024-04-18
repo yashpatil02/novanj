@@ -1,145 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lugrasimo&family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalam:wght@300;400;700&family=Lugrasimo&family=Space+Grotesk:wght@300..700&display=swap');
 
-.services-Top {
-  background-image: url('/public/assets/images/serv-Top.jpg');
-  background-size: cover;
-  /* Cover the entire container */
-  background-position: center;
-  overflow: hidden;
-  height: 100dvh;
-  width: 100%;
-  margin-top: -5%;
-  color: rgb(198, 198, 198) !important;
-  /* color: red; */
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.800);
-  }
+.service-image {
+  /* background-color: black; */
+  /* border: 2px solid red; */
 }
 
-.services-Top-head {
-  font-size: 60px !important;
-  font-family: cursive;
+.service-text {
+  /* background-color: black;
+  /* border: 2px solid red; */
+  color: rgb(0, 0, 0);
+
+}
+
+.textHead {
+  color: orangered;
+  text-align: start;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2vw;
+  font-family: "Kalam", cursive;
+  /* font-family: "Source Sans 3", sans-serif; */
   font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  padding-bottom: 30px !important;
-}
-
-.services-Top-cont {
-  font-size: 25px !important;
-  /* text-shadow: 2px 2px 8px rgb(108, 105, 105); */
-  /* Add text shadow */
-  font-family: cursive;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
-.services-Top-containt {
-  position: relative;
-  top: 40%;
-  padding-left: 20%;
-  padding-right: 20%;
-
-
+.textL {
+  color: rgb(86, 86, 86);
+  text-align: justify;
+  margin-right: 25px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1vw;
+  font-family: "Kalam", cursive;
+  /* font-weight: 700; */
+  font-style: normal;
+  /* margin-top: 10px; */
+margin: 10;
 }
 
+.service-image img {
+  width: 100%;
+  height: auto;
+}
+
+.content-wrapper {
+  width: 100%;
+  color: brown;
+  /* Adjust the width as needed */
+  margin-top: 5vh;
+  height: 100%;
+  /* Adjust the height as needed */
+}
+
+/* Increase the size of the Col components */
+.service-image,
+.service-text {
+  width: 50%;
+
+  /* Adjust the width as needed */
+}
+
+.RowData {
+  margin-top: 15dvh;
+  height: 50vh;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.content-wrapper img {
+  max-width: 100%;
+}
 .custom-col {
-  border-radius: 7%;
-  border: 0.1px solid lightgray !important;
-  background-color: #f3f6f1c7;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  /* Add transition for smooth effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  /* Default shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default shadow */
 }
 
 .custom-col:hover {
-  box-shadow: 0 0 50px 5px rgba(79, 78, 72, 0.779);
-  /* Darker shadow on hover */
-  transform: scale(1.05);
-  /* Increase size on hover */
+  box-shadow: 0 0 30px 10px rgba(255, 165, 0, 0.6); /* Darker shadow on hover */
+  transform: scale(1.05); /* Increase size on hover */
+}
+.service-image img {
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
-.services-Row {
-  background-color: whitesmoke;
-
+.service-image img:hover {
+  transform: scale(1.1); /* Increase image size on hover */
 }
 
-.services-Container {
-  /* background-color: rgb(14p3, 100, 100) !important; */
-  height: 70vh !important;
-  width: 100%;
-  background-image: url('/public/assets/images/info.jpg');
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  color: rgb(198, 198, 198) !important;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.800);
-  }
-
-}
-
-.fs {
-  font-size: 40px !important;
-  /* color: orangered !important; */
-}
-
-.fsh {
-  font-size: 30px !important;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(239, 22, 22) !important;
-}
-
-.fsp {
-  font-size: 20px !important;
-  font-weight: 800;
-  /* font-style: oblique; */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
-}
-
-.services-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100% !important;
-  height: 70vh !important;
-}
-
-.box {
-  flex: 0 0 calc(33.33% - 10px); /* 33% width for each box with a 10px gap between */
-  margin: 5px;
-  background: #000;
-  height: 27vh !important;
-}
-
-/* Adjust layout for smaller screens */
-@media screen and (max-width: 768px) {
-  .box {
-    flex: 0 0 calc(50% - 10px); /* 50% width for each box with a 10px gap between for smaller screens */
-  }
+.service-image img:hover {
+  box-shadow: 0 0 20px 5px rgba(139, 0, 0, 0.6); /* Dark red box shadow on hover */
 }
