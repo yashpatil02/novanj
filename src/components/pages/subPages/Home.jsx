@@ -173,7 +173,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
           <div className="section">
             <div className="card card-calculator" data-aos="fade-down-right" data-aos-duration="1500" data-aos-once="false">
               <div className="card-body">
