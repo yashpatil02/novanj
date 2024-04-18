@@ -1,0 +1,90 @@
+/* Define reusable classes */
+.footer {
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 0;
+  /* background-image: url('/public/assets/images/ban-2.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ /* height: 50vh; */
+
+
+}
+o
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.footer-heading {
+  color: #fff;
+}
+
+.footer-list li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-list li a:hover {
+  color: #ccc;
+}
+
+.footer-divider {
+  border-top: 3px solid #888888;
+}
+.carousel-img {
+width: 50%;
+height: 50%;
+  /* max-width: 100%; Set the maximum width of the images */
+  /* height: 80%; Maintain the aspect ratio */
+  /* Add any additional styling here */
+}
+/* Add this CSS to your external CSS file */
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media-icons li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-media-icons li:last-child {
+  margin-right: 0; /* Remove margin from the last icon */
+}
+
+.social-media-icons li{
+margin-right: 4%;
+}
+.footer-section .social-media-icons {
+  float: right; /* Float the social media icons to the right */
+justify-content: space-around;
+
+ /* Remove margin from the last icon */
+}
+.footer-hr{
+float: right;
+}
+.footer-box {
+  /* background-color: rgb(221, 0, 0); */
+  width: 30%;
+  object-fit: cover !important;
+  height: 120px;
+/* margin: 6px; */
+left: 15px;
+position: relative;
+margin-bottom: 10px;
+padding: 0 !important;
+margin-right: 10px;
+}
