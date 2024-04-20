@@ -96,7 +96,6 @@ overflow: hidden;
 .ball {
   width: 2rem;
 }
-
 @keyframes slideInRight {
   0% {
     transform: translateX(100%);
