@@ -1,97 +1,189 @@
-import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 import './Services.css'; // Import your CSS file for custom styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faTruckFast, faAward, faBasketball, faAddress, Card, faDatabase, faArrowsLeftRightToLine, faAddressCard, faVideo, faMagnifyingGlassChart, faSquarePollVertical, faTv, faChartLine, faChartPie, faVolleyball } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Services = () => {
   // Define the content array with objects representing each row
-  const content = [
-    {
-      imageUrl: process.env.PUBLIC_URL + './assets/images/bg-1.jpg', // Use local image path
-      heading: 'Hello World',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elit id libero finibus consectetur. Quisque sollicitudin lorem eget ligula bibendum, id tempus dolor lacinia. Nulla facilisi. Integer pharetra urna nec elit placerat, et volutpat ligula consectetur. Sed varius, odio eget ultricies rutrum, sapien leo eleifend odio, eget laoreet lectus urna et est. Sed in felis sed ex commodo mattis.'
-    },
-    {
-      imageUrl: process.env.PUBLIC_URL + '/assets/images/logo.png',
-      heading: 'Hello Lalit',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elit id libero finibus consectetur. Quisque sollicitudin lorem eget ligula bibendum, id tempus dolor lacinia. Nulla facilisi. Integer pharetra urna nec elit placerat, et volutpat ligula consectetur. Sed varius, odio eget ultricies rutrum, sapien leo eleifend odio, eget laoreet lectus urna et est. Sed in felis sed ex commodo mattis.'
-    },
-    {
-      imageUrl: process.env.PUBLIC_URL + '/assets/images/logo.png',
-      heading: 'Hello Sunny',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac elit id libero finibus consectetur. Quisque sollicitudin lorem eget ligula bibendum, id tempus dolor lacinia. Nulla facilisi. Integer pharetra urna nec elit placerat, et volutpat ligula consectetur. Sed varius, odio eget ultricies rutrum, sapien leo eleifend odio, eget laoreet lectus urna et est. Sed in felis sed ex commodo mattis.'
-    }
-  ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  AOS.init();
+
+  // You can also pass an optional settings object
+  // below listed default settings
+  AOS.init({
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+
+
+  });
 
   return (
     <>
+      <div className="services-Top">
+        <div className="services-Top-containt" data-aos="fade-down" data-aos-duration="2000" data-aos-once="false">
+          <h2 className="services-Top-head" >Novanj Analysis services</h2>
+          <p className="services-Top-cont" >Welcome to Novanj Sports Data Analysis Services, where we unlock the power of data to revolutionize your sports
+            insights. Our cutting-edge solutions provide invaluable insights, giving you a competitive edge like never before. Join us in
+            exploring the limitless potential of data-driven decision-making in the dynamic world of sports. . . . .</p>
+        </div>
+
+      </div>
+      <Container fluid>
+        <Row className="services-Row justify-content-around m-3 p-5 ">
+          <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
+            <FontAwesomeIcon icon={faBasketball} className="fs" />
+            <h className="fsh">Games</h>
+            <p className="fsp">Cricket, football, basketball, hockey, and ice hockey are prominent sports with diverse fan bases and unique gameplay.</p>
+          </Col>
+          <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
+            <FontAwesomeIcon icon={faAward} className="fs" />
+            <h className="fsh">Award</h>
+
+            <p className="fsp">Novanj Company was honored with prestigious awards for innovation, excellence, and outstanding contributions in its field.</p>
+          </Col>
+          <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
+            <FontAwesomeIcon icon={faTruckFast} className="fs" />
+            <h className="fsh">Product</h>
+
+            <p className="fsp">Novanj Company provides innovative software, hardware, and tech solutions to boost efficiency and productivity across industries.</p>
+          </Col>
+        </Row>
+      </Container>
       <Container>
-        <>
-          <Row className="justify-content-around mt-5">
-            <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
-              <i className="fas fa-coffee fa-lg p-4"></i>
-              <h>hello</h>
-              <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, adipisci?</p>
+        <div className='p-5' data-aos="zoom-in-right" data-aos-duration="2000" data-aos-once="false" >
+          <Row>
+            <Col md={6} >
+              <div className="wave-img" >
+                {/* Content for the fourth box */}
+                <Image className='wave-one' src="assets/images/dataAn.jpg" fluid style={{ objectFit: 'cover', height: '80%', marginTop: '8%' }} />
+              </div>
             </Col>
-            <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
-              <i className="fas fa-coffee fa-lg p-4"></i>
-              <h>hello</h>
-
-              <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, adipisci?</p>
-            </Col>
-            <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
-              <i className="fas fa-coffee fa-lg p-4"></i>
-              <h>hello</h>
-
-              <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, adipisci?</p>
+            <Col md={6}>
+              <div  >
+                <div className='text-start'>
+                  <FontAwesomeIcon icon={faMagnifyingGlassChart} style={{ display: 'inline-block', fontSize: '40px', color: 'orangered', marginRight: '20px' }}
+                  />
+                  {/* <span style={{ display: 'inline-block', width: '10%', backgroundColor: 'orangered', borderRadius: '5px', height: '5px', marginRight: '10px' }}
+                  /> */}
+                  <h4 className='OurMission'>Data Analysis</h4>
+                </div>
+                <p className='OurMissiontext'>
+                  Novanj, a pioneering data analysis company, utilizes AI models to extract valuable insights from raw data in various industries. Specializing in AI-powered cameras and models, Novanj trains its technology to interpret complex datasets and deliver actionable intelligence. Through rigorous training, these models continuously evolve to meet industry demands, offering unparalleled accuracy and efficiency. Novanj's innovative approach empowers businesses across sectors to optimize operations, enhance decision-making, and unlock new opportunities for growth. With a focus on cutting-edge AI technology, Novanj is revolutionizing the way businesses harness data to drive success and innovation.
+                </p>
+              </div>
             </Col>
 
           </Row>
-          {/* Map over the content array to generate rows dynamically */}
-          {content.map((item, index) => (
-            <Row key={index} className="RowData">
-              {/* Alternate the image and text columns based on the row index */}
-              {(index % 2 === 0) ? (
-                <>
-                  {/* Image column */}
-                  <Col md={6} className="service-image">
-                    <div className="content-wrapper">
-                      <img src={item.imageUrl} alt="placeholder" />
-                    </div>
-                  </Col>
-                  {/* Text column */}
-                  <Col md={6} className="service-text">
-                    <div className="content-wrapper">
-                      <h4 className="textHead">{item.heading}</h4>
-                      <p className="textL">{item.text}</p>
-                    </div>
-                  </Col>
-                </>
-              ) : (
-                <>
-                  {/* Text column */}
-                  <Col md={6} className="service-text">
-                    <div className="content-wrapper">
-                      <h4 className="textHead">{item.heading}</h4>
-                      <p className="textL">{item.text}</p>
-                    </div>
-                  </Col>
-                  {/* Image column */}
-                  <Col md={6} className="service-image">
-                    <div className="content-wrapper">
+        </div>
 
-                      <img src={item.imageUrl} alt="placeholder" />
-                    </div>
-                  </Col>
-                </>
-              )}
-            </Row>
-          ))}
-        </>
+
+        <div className='p-5' data-aos="fade-right" data-aos-duration="2000" data-aos-once="false" >
+          <Row>
+
+
+            <Col md={6} >
+              <div  >
+                <div className='text-start'>
+
+                  <FontAwesomeIcon icon={faVideo} style={{ display: 'inline-block', fontSize: '40px', color: 'orangered', marginRight: '20px' }} />
+
+                  <h4 className='OurMission'>AI Cemera vision</h4>
+                </div>
+                <p className='OurMissiontext'>
+                  Novanj's AI Camera Vision technology pioneers a new era in visual data analysis. By leveraging advanced AI algorithms, it extracts valuable insights from raw visual data, revolutionizing industries with unparalleled accuracy and efficiency. As technology evolves, Novanj envisions further advancements, with AI cameras becoming integral in various sectors, from security to healthcare. In sports, Novanj's AI-based sports data analysis transforms raw data into actionable insights, empowering teams and coaches to optimize performance and strategy. With a commitment to innovation, Novanj continues to push the boundaries of AI technology, shaping the future of visual data analysis and sports analytics.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} >
+              <div className="wave-img" >
+                {/* Content for the fourth box */}
+                <Image className='wave-one' src="assets/images/vision-in-sports.png" fluid style={{ objectFit: 'cover', height: '90%', marginTop: '3%' }} />
+              </div>
+            </Col>
+          </Row>
+        </div>
+        <div className='p-5 ' data-aos="fade-left" data-aos-duration="2000" data-aos-once="false">
+          <Row>
+            <Col md={6} >
+              <div className="wave-img" >
+                {/* Content for the fourth box */}
+                <Image className='wave-one' src="assets/images/FC.jpg" fluid style={{ objectFit: 'cover', height: '90%', marginTop: '3%' }} />
+              </div>
+            </Col>
+            <Col md={6}>
+              <div  >
+                <div className='text-start'>
+
+                  <FontAwesomeIcon icon={faVolleyball} style={{ display: 'inline-block', fontSize: '40px', color: 'orangered', marginRight: '20px' }} />
+
+                  <h4 className='OurMission'>Sports</h4>
+                </div>
+                <p className='OurMissiontext'>
+                  The sports industry stands as a dynamic ecosystem encompassing various sectors, from professional leagues and teams to media and merchandising. It serves as a global platform uniting diverse cultures and communities through the universal language of sports. With the rise of digitalization and technological advancements, the industry experiences continuous evolution, with innovations such as AI-powered analytics, virtual reality experiences, and fan engagement platforms reshaping how sports are experienced and consumed. As an economic powerhouse, it generates substantial revenue streams through broadcasting rights, sponsorships, and ticket sales, driving economic growth and fostering social connections worldwide.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </Container>
+      <Container fluid className="service-expo">
+        <div className="rxpo-div" data-aos="zoom-in-right" data-aos-duration="2000" data-aos-once="false">
+          <h3 className="expo-serv-heading">Discover  Services</h3>
+          <p className="expo-text">
+            Discover Novanj's comprehensive data analysis services. From AI-powered analytics to advanced data visualization, we offer cutting-edge solutions to unlock insights and drive decision-making. Explore how our expertise can empower your business to thrive in today's data-driven world.</p>
+          <button className="ex-more">Explore More</button>
+        </div>
+      </Container>
+      <Container fluid className="services-hr">
+        <div className="services-contaniner" >
+          <h2 className="services-heading-our">OUR SERVICES</h2>
+          <p className="services-con-text"> Introducing Novanj Sports Data Analysis: Your partner for precision insights and performance-driven strategies. Our dedicated team crafts tailored solutions to propel your business forward. Accessible platforms, comprehensive analysis, and client-centric approach ensure your success. Join us today and unlock your business's full potential!</p>
+          <div>
+            <div className="card-box"><FontAwesomeIcon icon={faTv} className="icon" />
+              <h5 className="head">Live & video Analysis</h5>
+              <p>Real-time analysis of player performance enhances strategic decision-making in sports.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faMagnifyingGlassChart} className="icon" />
+              <h5 className="head">Basic Analysis</h5>
+              <p>Essential review of sports data for insights and performance improvement.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faChartLine} className="icon" />
+              <h5 className="head">Standard Analysis</h5>
+              <p>Conventional examination of sports data for strategic insights and performance.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faChartPie} className="icon" />
+              <h5 className="head">Advance Analysis</h5>
+              <p>Conventional examination of sports data for strategic insights and performance.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faSquarePollVertical} className="icon" />
+              <h5 className="head">Advance Reporting </h5>
+              <p>Sophisticated analysis and comprehensive reporting for strategic insights making.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faAddressCard} className="icon" />
+              <h5 className="head">Scoring Application</h5>
+              <p>Application designed for scoring events or games with efficiency and accuracy.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faDatabase} className="icon" />
+              <h5 className="head">Data Visualization</h5>
+              <p>Presentation of data through visual elements for clear understanding and analysis.</p>
+            </div>
+            <div className="card-box"><FontAwesomeIcon icon={faArrowsLeftRightToLine} className="icon" />
+              <h5 className="head">Predictive Analysis</h5>
+              <p>Utilizing data to forecast future outcomes and trends for informed decision-making.</p>
+            </div>
+          </div>
+        </div>
       </Container>
     </>
   );
 }
-
-export default Services;
+export default Services

@@ -66,8 +66,29 @@
     align-items: center;
     background-color: #f7f7f7;
 }
+.about {
+  margin-bottom: 20px;
+  padding-top: 1rem;
+  position: relative;
+  overflow: hidden; /* Ensure child elements don't overflow */
+  background-image: url('/public/assets/images/homebg2.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.911); /* Adjust the opacity as needed */
+}
 
+.about-content{
+padding-top: 8rem;
+}
 .box {
     background-color: rgb(234, 27, 27);  
     width: 100%; 
@@ -94,6 +115,7 @@
     text-align: justify;
     margin-right: 25px;
     display: inline-block;
+    position: relative;
     font-weight: 600;
     font-size:1.1vw;
     /* font-family: "Kalam", cursive;
@@ -200,6 +222,10 @@
 
   @media only screen and (max-width: 768px) { 
 
+    .about-content{
+      padding-top: 1rem;
+      }
+
     .carousel-image {
       height: 60vh; /* Set the desired height */
       object-fit: cover; /* Ensure the image covers the entire area */
@@ -228,6 +254,7 @@
     .about{
       margin-bottom: 20px;
       padding-top: 1rem;
+      
   }
   
   

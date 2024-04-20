@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
+import React, { useState, useEffect } from 'react';
 import "./App.css";
+import Loader from './components/pages/Loader';
 import {
   BrowserRouter as Router,
   Route,
@@ -14,7 +16,19 @@ import Contact from "./components/pages/subPages/Contact";
 import CustomNavbar from "./components/pages/NavBars";
 import Footer from "./components/pages/Footer";
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the time according to your need
+  }, []);
+
+
   return (
+    <div>
+    {loading ? <Loader /> : (
     <div className="App">
       <BrowserRouter>
         <CustomNavbar />
@@ -27,6 +41,9 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
+
+)}
+      </div>
   );
 }
 

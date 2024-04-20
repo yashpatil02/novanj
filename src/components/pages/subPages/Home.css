@@ -88,7 +88,7 @@ overflow: hidden;
   top: 9rem;
   font-family: "Poppins", sans-serif;
   font-size: 1.5vw;
-  left: 100%;
+  left: 70%;
   font-family: "Kalam", cursive;
   font-optical-sizing: auto;
 }
@@ -126,7 +126,7 @@ overflow: hidden;
   font-size: 20px;
   position: relative;
   top: 45%;
-  right: 10%;
+  right: 15%;
   font-weight: 400;
   text-decoration: none;
   /* Remove underline */
@@ -170,6 +170,7 @@ overflow: hidden;
   font-weight: 400;
   color: hsl(229, 6%, 66%);
     font-family: "Rubik", sans-serif;
+    text-align: center;
 }
 
 header {
@@ -473,9 +474,36 @@ padding-top: 8rem !important;
 }
 
 .tab-lap {
-  margin-top: 40px;
-overflow: hidden;
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 40px;
+  overflow: hidden;
+  background-image: url('/public/assets/images/homebg.jpg');
+  /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover;
+  /* Cover the entire container */
+  background-position: center;
 }
+
+.tab-lap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.79); /* Adjust the opacity as needed */
+}
+
+.tabLabDiv {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.tablabText {
+  color: #000000; /* Set text color */
+}
+
 
 .tabLabDiv img {
   width: 40vw;
@@ -502,16 +530,78 @@ overflow: hidden;
   font-style: normal;
 }
 
+
 .assist {
   margin-top: 3rem;
-  overflow: hidden;
   margin-bottom: 6rem;
-  /* margin-top: 2rem; */
   background-color: #27967A;
   color: white;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  overflow: hidden;
+  position: relative;
+  overflow: hidden; /* Hide overflowing circles */
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circles::before,
+.circles::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white color */
+  animation: rotateCircleAppear 8s linear infinite; /* Animation for rotation */
+}
+
+/* Left circle */
+.circles::before {
+  width: 200px;
+  height: 200px;
+  top: -10%; /* Adjust the top percentage to position vertically */
+  left: -100px;
+}
+
+/* Right circle */
+.circles::after {
+  width: 150px;
+  height: 150px;
+  bottom: -10%; /* Adjust the bottom percentage to position vertically */
+  right: -75px;
+}
+
+/* Center circle */
+.center-circle {
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white color */
+  animation: rotateCircleAppear 8s linear infinite; /* Animation for rotation */
+  /* z-index: -1; Move the center circle behind other content */
+}
+
+@keyframes rotateCircleAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
 
 .laptopbg {
@@ -564,14 +654,14 @@ overflow: hidden;
 }
 
 .show1{
-  text-align: start;
+  text-align: center;
   /* font-family: "Oswald", sans-serif; */
   font-family: "Rubik", sans-serif;
   font-size: 1.4rem;
   color: #27967A;
 }
 .showtext{
-  text-align: start;
+  text-align: justify;
   font-size: 1.2rem;
   font-weight: 400;
   /* font-family: "Teko", sans-serif; */
