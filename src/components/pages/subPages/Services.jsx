@@ -148,35 +148,35 @@ const Services = () => {
           <h2 className="services-heading-our">OUR SERVICES</h2>
           <p className="services-con-text"> Introducing Novanj Sports Data Analysis: Your partner for precision insights and performance-driven strategies. Our dedicated team crafts tailored solutions to propel your business forward. Accessible platforms, comprehensive analysis, and client-centric approach ensure your success. Join us today and unlock your business's full potential!</p>
           <div>
-            <div className="card-box"><FontAwesomeIcon icon={faTv} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faTv} className="icon" />
               <h5 className="head">Live & video Analysis</h5>
               <p>Real-time analysis of player performance enhances strategic decision-making in sports.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faMagnifyingGlassChart} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faMagnifyingGlassChart} className="icon" />
               <h5 className="head">Basic Analysis</h5>
               <p>Essential review of sports data for insights and performance improvement.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faChartLine} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faChartLine} className="icon" />
               <h5 className="head">Standard Analysis</h5>
               <p>Conventional examination of sports data for strategic insights and performance.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faChartPie} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faChartPie} className="icon" />
               <h5 className="head">Advance Analysis</h5>
               <p>Conventional examination of sports data for strategic insights and performance.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faSquarePollVertical} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faSquarePollVertical} className="icon" />
               <h5 className="head">Advance Reporting </h5>
               <p>Sophisticated analysis and comprehensive reporting for strategic insights making.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faAddressCard} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faAddressCard} className="icon" />
               <h5 className="head">Scoring Application</h5>
               <p>Application designed for scoring events or games with efficiency and accuracy.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faDatabase} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faDatabase} className="icon" />
               <h5 className="head">Data Visualization</h5>
               <p>Presentation of data through visual elements for clear understanding and analysis.</p>
             </div>
-            <div className="card-box"><FontAwesomeIcon icon={faArrowsLeftRightToLine} className="icon" />
+            <div className="card-boxs"><FontAwesomeIcon icon={faArrowsLeftRightToLine} className="icon" />
               <h5 className="head">Predictive Analysis</h5>
               <p>Utilizing data to forecast future outcomes and trends for informed decision-making.</p>
             </div>
