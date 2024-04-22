@@ -305,42 +305,6 @@ const Home = () => {
       <hr style={{ color: '#27967A', height: '2px' }} />
       {/* happy clint counter code is here ----------------------------------- */}
 
-      <div id="counter" className='px-4 py-5'>
-        <Row >
-          <Col md={6} lg={3} data-aos="slide-left" data-aos-duration="1500" data-aos-once="false">
-            <Card className="card-supervisor card-box">
-              <Card.Body>
-                <h1 className="count" data-number="50"></h1>
-                <Card.Title>Team Members</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={3} data-aos="slide-right" data-aos-duration="1500" data-aos-once="false" >
-            <Card className="card-supervisor card-box">
-              <Card.Body>
-                <h1 className="count" data-number="15"></h1>
-                <Card.Title> Experience</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={3} data-aos="slide-left" data-aos-duration="1500" data-aos-once="false">
-            <Card className="card-supervisor card-box">
-              <Card.Body>
-                <h1 className="count" data-number="100"></h1>
-                <Card.Title>Projects </Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={3} data-aos="slide-right" data-aos-duration="1500" data-aos-once="false">
-            <Card className="card-supervisor card-box">
-              <Card.Body>
-                <h1 className="count" data-number="20"></h1>
-                <Card.Title>Happy Clients</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </div>
 
 
       <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
