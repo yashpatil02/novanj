@@ -25,7 +25,6 @@ overflow: hidden;
     background-color: rgba(0, 0, 0, 0.871);
   }
 }
-
 .bg-image {
   position: absolute;
   top: 50%;
@@ -227,7 +226,7 @@ main .section {
   border-top: 3px solid hsl(212, 86%, 64%);
 }
 
-.card .card-body {}
+
 
 .card .card-body .card-title {
   font-size: 1.6rem;
