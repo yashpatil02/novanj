@@ -11,25 +11,31 @@
   /* Cover the entire container */
   background-position: center;
   overflow: hidden;
-  height: 100dvh;
+  /* height: 105vh; */
   width: 100%;
-  margin-top: -5%;
+  /* margin-top: -7%; */
+  margin-top: -4%;
+  height: 101vh;
   color: rgb(255, 255, 255) !important;
   /* color: red; */
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 5;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 101vh;
     background-color: rgba(0, 0, 0, 0.800);
   }
 }
 
+.ser-top {
+  margin-top:23%;
+}
+
 .services-Top-head {
-  font-size: 60px !important;
+  font-size: 5rem !important;
   font-family: 'Poppins', sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -39,13 +45,13 @@
 
 
 .services-Top-cont {
-  font-size: 25px !important;
+  font-size: 3rem !important;
   /* text-shadow: 2px 2px 8px rgb(108, 105, 105); */
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   /* margin-top: 10px; */
-margin: 10;
+  margin: 10;
 }
 
 
@@ -110,8 +116,8 @@ margin: 10;
 
 .fs {
   font-size: 40px !important;
-color:rgb(255, 0, 0);
-padding-bottom: 1rem !important;
+  color: rgb(255, 0, 0);
+  padding-bottom: 1rem !important;
   /* color: orangered !important; */
 }
 
@@ -130,19 +136,21 @@ padding-bottom: 1rem !important;
   font-family: 'Poppins', sans-serif;
   color: rgba(0, 0, 0, 0.805);
 }
-.wave-img{
-margin-top: 1%;
-height: 100%;
+
+.wave-img {
+  margin-top: 1%;
+  height: 100%;
 }
-.service-expo{
-height: 80vh;
-width: 100%;
-background-image: url('/public/assets/images/expoimg.jpg');
-background-size: cover;
-background-position: top center;
-overflow: hidden;
-position: relative;
-&::before {
+
+.service-expo {
+  height: 80vh;
+  width: 100%;
+  background-image: url('/public/assets/images/expoimg.jpg');
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  position: relative;
+  /* &::before {
   content: '';
   position: absolute;
   top: 0;
@@ -150,42 +158,50 @@ position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+} */
 }
+.ntext{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
-.rxpo-div{
-width: 100% !important;
-height: 100% !important;
-top: 0%;
+
+.rxpo-div {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0%;
 }
-.ex-more{
-padding: 1rem ;
-background: transparent;
-border: 2px solid whitesmoke;
-position: relative;
-color: white;
-font-size: 1.4rem;
-top: 38%;
-}
-.expo-text{
+
+.ex-more {
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid whitesmoke;
   position: relative;
-color: white;
+  color: white;
+  font-size: 1.4rem;
+  top: 38%;
+}
+
+.expo-text {
+  position: relative;
+  color: white;
   font-size: 1.8rem;
-margin-left: 18%;
-margin-right: 18%;
-top: 30%;
-font-family: "Rubik", sans-serif;
+  margin-left: 18%;
+  margin-right: 18%;
+  top: 30%;
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-.expo-serv-heading{
-font-size: 4rem;
-font-weight: 600;
-font-family: "Rubik", sans-serif;
-font-style: normal;
-position: relative;
-color: white;
-top:28%;
+
+.expo-serv-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  position: relative;
+  color: white;
+  top: 28%;
 }
 
 
@@ -198,80 +214,87 @@ top:28%;
 
 
 
-.services-hr{
-height: 100vh;
-background: rgb(245, 243, 243);
-text-align: center;
+.services-hr {
+  height: 100vh;
+  background: rgb(245, 243, 243);
+  text-align: center;
 
 }
-.services-heading-our{
-color: rgb(0, 0, 0);
-padding: 1.5%;
-font-size: 2.5rem;
-font-family: 'Poppins', sans-serif;
+
+.services-heading-our {
+  color: rgb(0, 0, 0);
+  padding: 1.5%;
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
-.services-con-text{
-margin-left: 18%;
-margin-right: 18%;
-text-align:center;
-font-size: 1.2rem;
-font-family: 'Poppins', sans-serif;
-font-optical-sizing: auto;
-font-weight: 600;
-font-style: normal;
+
+.services-con-text {
+  margin-left: 18%;
+  margin-right: 18%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
-.services-contaniner{
-display: wrap;
-/* justify-content: space-around; */
+
+.services-contaniner {
+  display: wrap;
+  /* justify-content: space-around; */
 
 }
-.card-boxs{
-display: inline-block;
-width: 20%;
-height: 33vh;
-background: white !important;
-margin:8px;
-border-radius: 0%;
-padding: 23px;
-margin-bottom: 1%;
-margin-right: 1%;
-text-align: center;
-border-radius: 13%;
-transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+.card-boxs {
+  display: inline-block;
+  width: 20%;
+  height: 33vh;
+  background: white !important;
+  margin: 8px;
+  border-radius: 0%;
+  padding: 23px;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  text-align: center;
+  border-radius: 13%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   /* Add transition for smooth effect */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 400);
 
 }
-.card-box:hover {
+
+.card-boxs:hover {
   box-shadow: 0 0 10px 5px rgba(72, 66, 50, 0.779);
   /* Darker shadow on hover */
   transform: scale(1.05);
   /* Increase size on hover */
 }
 
-.icon{
-font-size: 36px;
-padding: 15px 10px 10px 10px !important;
-color: rgb(208, 153, 82);
+.icon {
+  font-size: 36px;
+  padding: 15px 10px 10px 10px !important;
+  color: rgb(208, 153, 82);
 }
-.head{
-margin: 5px 0px 0px 0px;
-padding-bottom: 10px !important;
-font-size: 1.5rem;
-font-family: 'Poppins', sans-serif;
-font-optical-sizing: auto;
-font-weight: 900;
-font-style: normal;
-color: rgb(63, 68, 44);
+
+.head {
+  margin: 5px 0px 0px 0px;
+  padding-bottom: 10px !important;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(63, 68, 44);
 }
-.card-box p{
-color: #000000c3;
-font-size: 1rem;
-font-size: 17px !important;
-font-family: 'Poppins', sans-serif;
-font-optical-sizing: auto;
-font-weight: 400;
-font-style: normal;
+
+.card-box p {
+  color: #000000c3;
+  font-size: 1rem;
+  font-size: 17px !important;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

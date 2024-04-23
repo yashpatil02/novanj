@@ -54,9 +54,7 @@ function About() {
   return (
     <>
 
-
-
-      <Carousel style={{ marginTop: '-88px' }}>
+      <Carousel style={{  }}>
         <Carousel.Item interval={10000}>
           <img
             className="d-block w-100 carousel-image"

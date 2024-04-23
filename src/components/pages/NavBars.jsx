@@ -7,7 +7,7 @@ import './NavBar.css';
 
 const CustomNavbar = () => {
   const location = useLocation();
-  const [navbarBg, setNavbarBg] = useState('rgba(0, 0, 0, 0.627)');
+  const [navbarBg, setNavbarBg] = useState('#000000'); // Set black background color
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -23,10 +23,10 @@ const CustomNavbar = () => {
     const handleScroll = () => {
       const offset = window.scrollY;
       if (offset > 200) {
-        setNavbarBg('light');
+        setNavbarBg('#ffffff'); // Change to white background color when scrolled
         document.querySelector('.navbar').classList.add('scrolled');
       } else {
-        setNavbarBg('rgba(0, 0, 0, 0.627)');
+        setNavbarBg('#000000'); // Revert to black background color when not scrolled
         document.querySelector('.navbar').classList.remove('scrolled');
       }
     };
