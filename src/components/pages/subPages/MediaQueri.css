@@ -48,9 +48,6 @@
 
 }
 
-
-
-
 /* yash laptop size  */
 @media only screen and (max-width: 1440px) {
   .bg-image {
@@ -639,48 +636,27 @@
 @media only screen and (max-width: 768px) {
 
   .heading1 {
-
     font-size: 12vw;
-    position: relative;
     top: 50%;
     left: 50%;
-    /* z-index: 99; */
     transform: translate(-62%, -80%);
-    font-weight: 500;
-    font-family: "Oswald", sans-serif;
-
   }
 
 
   .sport {
-    font-weight: 700;
-    position: relative;
     margin-right: -3rem;
     top: -18vh;
-    /* margin-right: 0; */
     left: -6vw;
-    animation: slideInRight 8s ease forwards;
   }
 
   .analysis {
-    font-weight: 700;
-    position: relative;
     top: -9vh;
     font-size: 10vw;
-    left: 5.5vw;
-    animation: slideInLeft 8s ease forwards;
+    left: 9vw;
   }
 
   .bg-image-container {
-    position: relative;
-    width: 100%;
-    height: 93vh;
-    /* top: -88px; */
-    background-image: url('/public/assets/images/whiteBg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    height: 82vh;
     &::before {
       content: '';
       position: absolute;
@@ -698,28 +674,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-60%, -52%);
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
-
   }
 
   .text-right {
-    position: relative;
     top: 14rem;
-    font-family: "Poppins", sans-serif;
     font-size: 2.8vw;
-    left: 20%;
-    font-family: "Kalam", cursive;
-    font-optical-sizing: auto;
+    left: 10%;
   }
   
   .scroll-down {
-    position: relative;
-    top: 40%;
-    right: 27%;
+    top: 45%;
+    right: 30%;
 
   }
-
-
   #counter {
     overflow: hidden;
     padding-top: 4rem !important;
@@ -759,7 +726,9 @@
   }
 
   .text-muted {
-    padding: 20px;
+    padding: 0px;
+    padding-top: 1;
+    text-align: center;
   }
 
   .tabLabDiv img {
@@ -882,120 +851,3 @@
   
 }
 
-
-
-/* @media only screen and (max-width: 610) {
-
-  .heading1 {
-    color: #b38600;
-    font-size: 12vw;
-    position: relative;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-62%, -80%);
-    font-weight: 500;
-    font-family: "Oswald", sans-serif;
-
-  }
-
-  .bg-image-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-
-    background-image: url('/public/assets/images/whiteBg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.871);
-    }
-  }
-
-
-
-  .sport {
-    font-weight: 700;
-    position: relative;
-    margin-right: -3rem;
-    top: -188px;
-    left: -40px;
-    animation: slideInRight 8s ease forwards;
-  }
-
-  .analysis {
-    font-weight: 700;
-    position: relative;
-    top: -99px;
-    font-size: 80px;
-    left: 88px;
-    animation: slideInLeft 8s ease forwards;
-  }
-
-
-  .bg-image {
-    width: 61vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%, -52%);
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
-
-  }
-
-  .text-right {
-    position: relative;
-    top:50% ;
-    left: 50%;
-    transform: translate(-10%, 200%);
-    font-size: 2.5vw;
-    left: 93%;
-  }
-
-  .scroll-down {
-    position: relative;
-    top: 40%;
-    right: 16%;
-
-  }
-
-
-
-  main {
-    flex-direction: column;
-    column-gap: 0;
-  }
-
-  .section {
-    margin-bottom: 20px;
-  }
-
-  .card {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .card.card-supervisor,
-  .card.card-team_builder,
-  .card.card-karma,
-  .card.card-calculator {
-    margin-bottom: 20px;
-
-  }
-
-  .fourcard {
-
-    margin-top: 40px;
-  }
-
-
-
-} */

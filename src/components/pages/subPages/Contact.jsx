@@ -72,7 +72,7 @@ AOS.init({
                   <p>1st floor, Jay Plaza, Back side of Domino's, Privan Sports analyer Pvt Ltd, Rane Nagar, Nashik, Maharashtra 422009</p>
                   <p><span className="collig">Phone :</span> +91 976885083</p>
                   <p><span className="collig">Email :</span> yashpatil121199@gmail.com</p>
-                  <p><span className="collig">Fax :</span> +91 97688509</p>
+                  {/* <p><span className="collig">Fax :</span> +91 97688509</p> */}
                 </div>
               </div>
               <div className="sec2contactform">

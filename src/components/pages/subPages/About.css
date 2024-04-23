@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 .carousel-image {
-  height: 97vh; /* Set the desired height */
+  height: 91vh; /* Set the desired height */
   object-fit: cover; /* Ensure the image covers the entire area */
   object-position: center; /* Position the image in the center */
   filter: brightness(25%); /* Adjust brightness to darken the image */

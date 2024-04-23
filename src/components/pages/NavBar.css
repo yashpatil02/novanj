@@ -1,29 +1,73 @@
-/* Navbar.css */
+/* NavBar.css */
 
+/* Add position: relative to the navbar */
 .navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.205); /* Adjust shadow properties as needed */
-/* background-color: rgb(255, 255, 255) !important; */
-}
-.navbar-brand img {
- width: 140px;
- /* height: 40px; */
-  }
-  
-  .nav-link {
-    font-size: 18px;
-    color: #3f3776 !important;  /* Change color as needed */
-  }
-  
-  .nav-link:hover {
-    color: #5d4ecf !important;  /* Change color as needed */
-  }
-  
-  /* NavBar.css */
-.navbar-light .nav-link {
-  color: #efef06 !important; /* Set default color to white */
-  
+  background: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.6px);
+  -webkit-backdrop-filter: blur(12.6px);
 }
 
+/* Set z-index for navbar collapse to ensure it appears above other components */
+.navbar-collapse {
+  z-index: 999; /* Ensure navbar collapse appears above other elements */
+}
+
+/* Set a high z-index for the parent container of your page content */
+.page-container {
+  position: relative;
+  z-index: 1; /* Ensure page content appears beneath navbar */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.navbar-brand img {
+  width: 140px;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #3f3776 !important; /* Change color as needed */
+}
+.navbar-toggler {
+  border: none; /* Remove border from the hamburger button */
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-sizing: none;
+}
+
+.nav-link:hover {
+  color: #5d4ecf !important; /* Change color as needed */
+}
+
+/* Set default color to white for navbar links */
+.navbar-light .nav-link {
+  color: #000000 !important;
+}
+
+/* Change color when scrolled */
 .navbar-light.scrolled .nav-link {
-  color: rgb(82, 18, 117) !important; /* Change color when scrolled */
+  color: #4e3a00 !important; /* Change color when scrolled */
+}
+
+/* Reduce height of navbar in mobile view */
+@media (max-width: 767px) {
+
+  .navbar-brand img {
+    width: 100px; /* Adjust logo size */
+  }
+
+  .navbar-toggler {
+    border: none; /* Remove border from the hamburger button */
+  }
+  .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  
 }

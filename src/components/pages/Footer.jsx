@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css'; // Import your CSS file
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {   faPhone, faEnvelope, faLocationDot  } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
     // Array of image paths
     const imagePaths = [
@@ -19,21 +20,33 @@ function Footer() {
                     <Row className="footer-content">
                         <Col md={8}>
                             <Row >
-                                <Col md={6} className="footer-section">
+                                <Col md={4} className="footer-section">
                                     <h5 className="footer-heading">Novanj Company</h5>
-                                    <span>Novanj: Leading sports analysis provider empowering athletes, coaches, and teams worldwide with innovative tools and data-driven strategies for success.</span>
+                                    <p className='footer-comp'>Novanj: Leading sports analysis provider empowering athletes, coaches, and teams worldwide with innovative tools and data-driven strategies for success.</p>
                                 </Col>
-                                <Col md={6} className="footer-section">
+                                <Col md={4} className="footer-section">
                                     <h5 className="footer-heading">Contact Us</h5>
                                     <div className="contact-info">
-                                        <p >
-                                            <i className="fas fa-phone"></i> Phone: +123456789<br />
-                                            <i className="fas fa-envelope"></i> Email: info@novanj.com<br />
-                                            <i className="fas fa-map-marker-alt"></i> Novanj Sports Analysis<br />
-                                            123 Main Street, City, Country
-                                        </p>
+                                    <ul className="contact-list">
+                                        <li>  <FontAwesomeIcon icon={faPhone} className='me-2' /> 9021042333</li>
+                                        <li>  <FontAwesomeIcon icon={faEnvelope } className='me-2' /> novanj@gmail.com</li>
+                                        <li> <FontAwesomeIcon icon={faLocationDot } className='me-2' />Novanj Sports analyer Pvt Ltd, Rane Nagar, Nashik, Maharashtra 422009</li>
+                                       
+                                    </ul>
                                     </div>
                                 </Col>
+                                <Col md={4}>
+                                    <h5 className="footer-heading">Games</h5>
+                                    <ul className="games-list">
+                                        <li>FootBall</li>
+                                        <li>BasketBall</li>
+                                        <li>NetBall</li>
+                                        <li>Ice Hockey</li>
+                                        <li>Field Hockey</li>
+                                        <li>Soccer</li>
+                                    </ul>
+                                </Col>
+
                             </Row>
                             <br />
                             <br />
@@ -42,44 +55,44 @@ function Footer() {
                                     <h5 className="footer-heading">Social Media</h5>
                                     <ul className="social-media-icons">
                                         {/* WhatsApp */}
-                                        <li><a href="#"><i className="fab fa-whatsapp fa-2x"></i></a></li>
+                                        {/* <li className='mediaround'><a href="#"><i className="fab fa-whatsapp fa-2x"></i></a></li> */}
                                         {/* Instagram */}
-                                        <li><a href="#"><i className="fab fa-instagram fa-2x"></i></a></li>
+                                        <li className='mediaround instas'><a href="#"><i className="fab fa-instagram fa-2x"></i></a></li>
                                         {/* LinkedIn */}
-                                        <li><a href="#"><i className="fab fa-linkedin fa-2x"></i></a></li>
+                                        <li className='mediaround link'><a href="#"><i className="fab fa-linkedin fa-2x"></i></a></li>
                                         {/* Facebook */}
-                                        <li><a href="#"><i className="fab fa-facebook fa-2x"></i></a></li>
+                                        <li className='mediaround fbs'><a href="#"><i className="fab fa-facebook fa-2x"></i></a></li>
                                         {/* Twitter */}
-                                        <li><a href="#"><i className="fab fa-twitter fa-2x"></i></a></li>
+                                        <li className='mediaround twitt'><a href="#"><i className="fab fa-twitter fa-2x"></i></a></li>
                                     </ul>
                                 </Col>
                             </Row>
                         </Col>
                         <Col md={4} className="footer-section">
                             <h5 className="footer-heading">Our Sports</h5>
-                            <div className="row d-flex">
+                            <div className="row d-flex footer-img">
                                 {/* Map through imagePaths array and render each image */}
                                 {imagePaths.map((imagePath, index) => (
                                     <div key={index} className=" footer-box">
-                                        <img src={imagePath} alt={`Image ${index + 1}`} style={{ width: "100%", height: '100%',objectFit:'cover' }} />
+                                        <img src={imagePath} alt={`Image ${index + 1}`} style={{ width: "100%", height: '100%', objectFit: 'cover' }} />
                                     </div>
                                 ))}
                             </div>
                         </Col>
                     </Row>
-                    <hr className="footer-divider" />
+                    <hr className="footer-divider" style={{ color: 'white' }} />
                     <Row>
-                        <Col md={12}>
-                            <span>
-                                Privacy Policy | Terms & Conditions | Software License Agreement |
-                                Do Not Sell or Share My Personal Information | Cookies | Security
-                            </span>
-                            <br />
-                            <span>
-                                Novanj Analysis is a product and service of Novanj Sports Technologies, Inc.
-                                All text and design © 2007-2024. All rights reserved.
-                            </span>
+
+
+
+                        <Col md={12} className="d-flex justify-content-between align-items-center">
+                            <p className='m-0 copyright'>&copy; 2024 Novanj. All rights reserved.</p>
+                            <div className="text-end">
+                                <p className="m-0 term">Terms & Conditions - Privacy Policy</p>
+                                {/* <p className="m-0">Privacy Policy</p> */}
+                            </div>
                         </Col>
+
 
                     </Row>
                 </footer>
