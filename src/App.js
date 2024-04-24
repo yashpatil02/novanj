@@ -13,6 +13,7 @@ import Home from "./components/pages/subPages/Home";
 import About from "./components/pages/subPages/About";
 import Services from "./components/pages/subPages/Services";
 import Contact from "./components/pages/subPages/Contact";
+import Basketball from "./components/pages/Games/Basketball";
 import CustomNavbar from "./components/pages/NavBars";
 import Footer from "./components/pages/Footer";
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" exact element={<Contact />} />
+          <Route path="/Basketball" exact element={<Basketball />} />
         </Routes>
         <Footer />
       </BrowserRouter>

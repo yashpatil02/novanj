@@ -4,7 +4,7 @@ import { Navbar, Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
-
+import NavDropdown from 'react-bootstrap/NavDropdown';
 const CustomNavbar = () => {
   const location = useLocation();
   const [navbarBg, setNavbarBg] = useState('#000000'); // Set black background color
@@ -58,6 +58,17 @@ const CustomNavbar = () => {
               {/* <Nav.Link eventKey="link-4" onClick={() => scrollToSection('contact')}>Contact</Nav.Link> */}
               <Nav.Link eventKey="link-4" as={Link} to="/contact">Contact</Nav.Link>
             </Nav.Item>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item  eventKey="link-5" as={Link} to="/basketball">Basketball</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
