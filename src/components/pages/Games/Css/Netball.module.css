@@ -1,0 +1,193 @@
+
+/* footBall.module.css */
+
+.netBallSection {
+  width: 100%;
+  height: 70vh;
+  background: url('/public/assets/images/net.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+}
+
+.textContainer {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+}
+
+.textContainer h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.textContainer h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Kalam", cursive;
+}
+
+.animatedLine {
+  animation: slideRight 5s infinite;
+}
+
+@keyframes slideRight {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+.basketballFh {
+  padding: 3rem;
+}
+
+.imgFluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.customShadowFh {
+width: 100% !important;
+margin-top: 12%;
+  position: relative;
+  overflow: hidden;
+}
+
+.customShadowFh img {
+  display: block;
+  z-index: 99;
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 8px rgba(26, 26, 26, 0.481));
+}
+
+.textContentFh {
+
+  padding: 0 20px;
+}
+
+.confgHeading1,
+.confgHeading2,
+.confgHeading3,
+.confgHeading4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: start;
+  font-family: "Rubik", sans-serif;
+}
+
+.confgText,
+.confgText2,
+.confgText3,
+.confgText4 {
+  font-size: 1rem;
+  color: #ffffff;
+  text-align: start;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.infoFh {
+  background-color: #27967A;
+}
+
+.rulesMain {
+  margin: 5rem;
+  margin-bottom: 4rem;
+}
+
+.ruleHeading1,
+.ruleHeading2,
+.ruleHeading3,
+.ruleHeading4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #27967A;
+  text-align: start;
+  font-family: "Rubik", sans-serif;
+}
+
+.iconss {
+  padding-right: 1rem;
+}
+
+.ruleText,
+.ruleText2,
+.ruleText3,
+.ruleText4 {
+  font-size: 1rem;
+  text-align: start;
+  padding-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.rulesMain p {
+  padding-left: 3rem;
+}
+/* Footer Section */
+.footFirstCont {
+  height: 89vh;
+  background-color: black;
+  padding: 2%;
+  color: white;
+  font-size: 1rem;
+}
+
+.footFirstRow {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 95%;
+  height: 79vh;
+}
+
+.footFirstColA {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.footFirstColA h3 {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footFirstColA p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.getSBtn {
+  padding: 8px;
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 3px;
+  border: none;
+}
+
+.footFirstColB {
+  background-image: url('/public/assets/images/nwtball3.jpeg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}

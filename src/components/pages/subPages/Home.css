@@ -5,6 +5,22 @@
 /* Home.css */
 
 
+
+
+/* font familys  */
+/* font-family: "Oswald", sans-serif;
+font-family: "Kalam", cursive;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: sans-serif;
+font-family: "Rubik", sans-serif;
+font-family: "Poppins", sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bg-image-container {
   position: relative;
   width: 100%;
@@ -14,7 +30,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-overflow: hidden;
+  background-attachment: fixed;
+  overflow: hidden;
+
   &::before {
     content: '';
     position: absolute;
@@ -25,15 +43,17 @@ overflow: hidden;
     background-color: rgba(0, 0, 0, 0.871);
   }
 }
+
 .bg-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-60%, -50%);
+  background-attachment: fixed;
   /* You can keep or remove this depending on your requirement */
 }
 
-.overlay {
+.overlays {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,6 +115,7 @@ overflow: hidden;
 .ball {
   width: 2rem;
 }
+
 @keyframes slideInRight {
   0% {
     transform: translateX(100%);
@@ -167,8 +188,8 @@ overflow: hidden;
 .text-muted {
   font-weight: 400;
   color: hsl(229, 6%, 66%);
-    font-family: "Rubik", sans-serif;
-    text-align: center;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
 }
 
 header {
@@ -272,10 +293,11 @@ main .section {
   background-size: cover;
   /* Cover the entire container */
   background-position: center;
+  background-attachment: fixed;
   overflow: hidden;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   /* Center the image */
-  padding-top: 10px;
+  padding-top: 5rem;
   /* min-height: 100vh; */
   /* Ensure the container covers the entire viewport height */
   display: flex;
@@ -394,7 +416,7 @@ main .section {
   /* background: #27967A; */
   padding: 40px 0px;
   width: 100%;
-padding-top: 8rem !important;
+  padding-top: 8rem !important;
   padding-bottom: 8rem !important;
 }
 
@@ -421,7 +443,7 @@ padding-top: 8rem !important;
   text-transform: capitalize;
 }
 
-.card-box{
+.card-box {
   border-radius: 20px;
 }
 
@@ -480,6 +502,7 @@ padding-top: 8rem !important;
   background-image: url('/public/assets/images/homebg.jpg');
   /* Replace 'path/to/your/image.jpg' with the path to your image */
   background-size: cover;
+  background-attachment: fixed;
   /* Cover the entire container */
   background-position: center;
 }
@@ -491,16 +514,19 @@ padding-top: 8rem !important;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.79); /* Adjust the opacity as needed */
+  background-color: rgba(255, 255, 255, 0.79);
+  /* Adjust the opacity as needed */
 }
 
 .tabLabDiv {
   position: relative;
-  z-index: 1; /* Ensure content is above the overlay */
+  z-index: 1;
+  /* Ensure content is above the overlay */
 }
 
 .tablabText {
-  color: #000000; /* Set text color */
+  color: #000000;
+  /* Set text color */
 }
 
 
@@ -531,14 +557,15 @@ padding-top: 8rem !important;
 
 
 .assist {
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+  /* margin-top: 3rem; */
+  /* margin-bottom: 6rem; */
   background-color: #27967A;
   color: white;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 5rem;
   position: relative;
-  overflow: hidden; /* Hide overflowing circles */
+  overflow: hidden;
+  /* Hide overflowing circles */
 }
 
 .circles {
@@ -554,15 +581,18 @@ padding-top: 8rem !important;
   content: '';
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white color */
-  animation: rotateCircleAppear 8s linear infinite; /* Animation for rotation */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white color */
+  animation: rotateCircleAppear 8s linear infinite;
+  /* Animation for rotation */
 }
 
 /* Left circle */
 .circles::before {
   width: 200px;
   height: 200px;
-  top: -10%; /* Adjust the top percentage to position vertically */
+  top: -10%;
+  /* Adjust the top percentage to position vertically */
   left: -100px;
 }
 
@@ -570,7 +600,8 @@ padding-top: 8rem !important;
 .circles::after {
   width: 150px;
   height: 150px;
-  bottom: -10%; /* Adjust the bottom percentage to position vertically */
+  bottom: -10%;
+  /* Adjust the bottom percentage to position vertically */
   right: -75px;
 }
 
@@ -583,8 +614,10 @@ padding-top: 8rem !important;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white color */
-  animation: rotateCircleAppear 8s linear infinite; /* Animation for rotation */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white color */
+  animation: rotateCircleAppear 8s linear infinite;
+  /* Animation for rotation */
   /* z-index: -1; Move the center circle behind other content */
 }
 
@@ -593,10 +626,12 @@ padding-top: 8rem !important;
     opacity: 0;
     transform: scale(0);
   }
+
   50% {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(0);
@@ -604,7 +639,7 @@ padding-top: 8rem !important;
 }
 
 .laptopbg {
-  width:40vw;
+  width: 40vw;
   margin-left: 2rem;
   position: relative;
   /* left: 1rem; */
@@ -620,7 +655,7 @@ padding-top: 8rem !important;
   font-family: "Rubik", sans-serif;
   line-height: 1.7;
   margin-top: 40px;
-  
+
 }
 
 .teamtext {
@@ -628,7 +663,7 @@ padding-top: 8rem !important;
   font-size: 1.3rem;
   line-height: 1.7;
   /* font-family: "Oswald", sans-serif; */
-   font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   margin-top: 40px;
 }
 
@@ -639,95 +674,120 @@ padding-top: 8rem !important;
   font-family: "Teko", sans-serif;
   line-height: 1.4;
   margin-top: 40px;
- 
+
 }
 
-.whynovanj{
+.whynovanj {
   font-family: "Rubik", sans-serif;
 }
 
-.content{
+.content {
   overflow: hidden;
   margin-top: 5rem;
   margin-bottom: 40px;
 }
 
-.show1{
+.show1 {
   text-align: center;
   /* font-family: "Oswald", sans-serif; */
   font-family: "Rubik", sans-serif;
   font-size: 1.4rem;
   color: #27967A;
 }
-.showtext{
+
+.showtext {
   text-align: justify;
   font-size: 1.2rem;
   font-weight: 400;
   /* font-family: "Teko", sans-serif; */
-  font-family: "Oswald", sans-serif; 
+  font-family: "Oswald", sans-serif;
   /* font-family: "Rubik", sans-serif; */
   margin-top: 20px;
   color: #21252a;
-  
+
 }
-.fa-solid{
-font-size: 3rem;
-text-align: start;
-margin-bottom: 20px;
-color: #27967A;
+
+.fa-solid {
+  font-size: 3rem;
+  text-align: start;
+  margin-bottom: 20px;
+  color: #27967A;
 }
 
 
 .social-icon {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Adjust the spacing between icons */
-  color: #B38600; /* Set the color of the icons */
-  font-size: 24px; /* Adjust the size of the icons */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease; /* Add transition for smooth animation */
-  padding: 10px; /* Add padding to make the clickable area larger */
-  border-radius: 5px; /* Add border-radius for rounded corners */
+  margin-bottom: 10px;
+  /* Adjust the spacing between icons */
+  color: #B38600;
+  /* Set the color of the icons */
+  font-size: 24px;
+  /* Adjust the size of the icons */
+  text-decoration: none;
+  /* Remove underline */
+  transition: background-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
+  /* Add transition for smooth animation */
+  padding: 10px;
+  /* Add padding to make the clickable area larger */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
   animation: moveUpDown .8s ease infinite alternate;
 }
 
 .social-icon-text {
-  display: none; /* Initially hide the text */
-  margin-left: 10px; /* Adjust the distance between icon and text */
+  display: none;
+  /* Initially hide the text */
+  margin-left: 10px;
+  /* Adjust the distance between icon and text */
   font-size: 16px;
   color: white !important;
 }
 
 .social-icon:hover {
-  background-color:#b3860080; /* Change the background color on hover */
-  transform: scale(1.05); /* Scale up the icon on hover */
-  box-shadow: 0 0 10px #b3860091; 
-  color: white;/* Add box-shadow on hover */
+  background-color: #b3860080;
+  /* Change the background color on hover */
+  transform: scale(1.05);
+  /* Scale up the icon on hover */
+  box-shadow: 0 0 10px #b3860091;
+  color: white;
+  /* Add box-shadow on hover */
 }
 
 .social-icon:hover .social-icon-text {
-  display: inline; /* Display the text on hover */
-  background-color: rgba(255, 255, 255, 0.2); /* Change the background color of the text on hover */
-  padding: 5px 10px; /* Add padding to the text */
-  border-radius: 5px; /* Add border-radius for rounded corners */
+  display: inline;
+  /* Display the text on hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Change the background color of the text on hover */
+  padding: 5px 10px;
+  /* Add padding to the text */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
   color: white;
 }
 
 .social-icons {
   position: absolute;
-  bottom: 50px; /* Adjust the distance from the bottom */
-  left: 30px; /* Adjust the distance from the left */
-  z-index: 1000; /* Ensure the icons are above other content */
+  bottom: 50px;
+  /* Adjust the distance from the bottom */
+  left: 30px;
+  /* Adjust the distance from the left */
+  z-index: 1000;
+  /* Ensure the icons are above other content */
 }
-.fb{
-  color: 	#1877F2;
+
+.fb {
+  color: #1877F2;
 }
-.twitter{
-  color: 	#1DA1F2;
+
+.twitter {
+  color: #1DA1F2;
 }
-.insta{
+
+.insta {
   color: #ee2a7b;
 }
-.linkd{
-  color:	#0077B5;
+
+.linkd {
+  color: #0077B5;
 }

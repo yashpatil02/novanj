@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+.basketball-expo {
+    background: url('/public/assets/images/basketballhome.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* You may need to adjust text color for better visibility */
+}
+
+/* Color boxes */
+.color-boxes {
+    position: absolute;
+    top:40%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.yellow-box, .blue-box, .lightgreen-box {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ffffff; /* Add border for better visibility */
+}
+
+.yellow-box {
+    background-color: rgb(0, 0, 0);
+}
+
+.blue-box {
+    background-color: skyblue;
+}
+.lightgreen-box{
+    background-color: #27967A;
+}
+
+.ntext {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.bs-div {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0%;
+}
+
+.bs-more {
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    position: relative;
+    color: white;
+    font-size: 1.4rem;
+    top: 38%;
+}
+
+.bs-text {
+    position: relative;
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 18%;
+    margin-right: 18%;
+    top: 30%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.expo-bs-heading {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    position: relative;
+    color: white;
+    top: 28%;
+}
+
+/* Styles for the basketball container */
+.basketball-hr {
+  padding-top: 5rem;
+}
+
+/* Styles for the image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-shadow {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-shadow img {
+    display: block;
+    z-index: 99;
+    border-radius: 8px;
+    /* Border radius */
+    filter: drop-shadow(0px 4px 8px rgba(26, 26, 26, 0.481));
+    /* Filter shadow */
+}
+
+/* Styles for the text content */
+.text-content {
+    padding: 0 20px;
+}
+
+.con-heading1,
+.con-heading2,
+.con-heading3,
+.con-heading4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    text-align: start;
+    font-family: "Rubik", sans-serif;
+}
+
+.con-text,
+.con-text2,
+.con-text3,
+.con-text4 {
+    font-size: 1rem;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    text-align: start;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.info-bs {
+    background-color: #27967A;
+}
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .text-content {
+        padding: 20px;
+    }
+ .con-heading1,
+.con-heading2,
+.con-heading3,
+.con-heading4 {
+    font-size: 1rem;
+}
+
+.con-text,
+.con-text2,
+.con-text3,
+.con-text4 {
+    font-size: .7rem;
+}
+
+.bs-more {
+    padding: .3rem;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    position: relative;
+    color: white;
+    font-size: .8rem;
+    top: 38%;
+}
+
+.bs-text {
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    margin-left: 18%;
+    margin-right: 18%;
+    top: 30%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.expo-bs-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    position: relative;
+    color: white;
+    top: 28%;
+}
+
+}
+

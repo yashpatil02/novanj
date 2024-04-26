@@ -55,6 +55,25 @@
   color: #4e3a00 !important; /* Change color when scrolled */
 }
 
+
+/* NavBar.css */
+
+/* Override default styling for NavDropdown */
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.713) !important;
+  border: none !important; /* Optional: Remove border if needed */
+}
+
+/* Override default styling for NavDropdown.Item */
+.NavDropdown .Item {
+  background-color: transparent !important;
+  color: #27967A !important; /* Change text color if needed */
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #27967A;
+}
+
 /* Reduce height of navbar in mobile view */
 @media (max-width: 767px) {
 

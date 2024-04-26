@@ -1,0 +1,285 @@
+/* Fieldhockey.css */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+
+.fieldhockey-section {
+    width: 100%;
+    height: 70vh;
+    /* Adjust the height as needed */
+    background: url('/public/assets/images/fildhockey.jpg');
+    /* URL to your background image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-attachment: fixed;
+    background-position: center;
+    /* Center the image */
+    position: relative;
+    /* Ensure absolute positioning within this container */
+}
+
+/* Fieldhockey.css */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, transparent, rgb(0, 0, 0));
+    /* Right side shadow */
+}
+
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    /* Adjust the right position of the text */
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-family: "Oswald", sans-serif
+}
+
+.text-container h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.text-container h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Kalam", cursive
+}
+
+.animated-line {
+    animation: slideRight 5s infinite;
+    /* Duration and timing of animation */
+}
+
+@keyframes slideRight {
+    0% {
+        width: 0%;
+        /* Start with width as 0 */
+    }
+
+    100% {
+        width: 80%;
+        /* End with width as 80% */
+    }
+}
+
+
+
+/* Styles for the basketball container */
+.basketball-fh {
+    padding-top: 5rem;
+}
+
+/* Styles for the image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-shadow-fh {
+    position: relative;
+    overflow: hidden;
+    /* top: 5rem; */
+}
+
+.custom-shadow-fh img {
+    display: block;
+    z-index: 99;
+    border-radius: 8px;
+    /* Border radius */
+    filter: drop-shadow(0px 4px 8px rgba(26, 26, 26, 0.481));
+    /* Filter shadow */
+}
+
+/* Styles for the text content */
+.text-content-fh {
+    padding: 0 20px;
+}
+
+.confg-heading1,
+.confg-heading2,
+.confg-heading3,
+.confg-heading4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    text-align: start;
+    font-family: "Rubik", sans-serif;
+}
+
+.confg-text,
+.confg-text2,
+.confg-text3,
+.confg-text4 {
+    font-size: 1rem;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    text-align: start;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.info-fh {
+    background-color: #27967A;
+}
+
+.rules-main {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.rule-heading1,
+.rule-heading2,
+.rule-heading3,
+.rule-heading4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27967A;
+    /* Adjust text color as needed */
+    text-align: start;
+    font-family: "Rubik", sans-serif;
+    /* padding-top: 3rem; */
+}
+
+.iconss {
+    padding-right: 1rem;
+}
+
+.rule-text,
+.rule-text2,
+.rule-text3,
+.rule-text4 {
+    font-size: 1rem;
+
+    /* color: #ffffff; */
+    /* Adjust text color as needed */
+    text-align: start;
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
+    padding-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.rules-main p {
+    padding-left: 3rem;
+}
+
+/* Color boxes */
+.color-boxes {
+    position: absolute;
+    top:40%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.yellow-box, .blue-box, .lightgreen-box {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ffffff; /* Add border for better visibility */
+}
+
+.yellow-box {
+    background-color: rgb(0, 0, 0);
+}
+
+.blue-box {
+    background-color: skyblue;
+}
+.lightgreen-box{
+    background-color: #27967A;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .color-boxes {
+        position: absolute;
+        top:65%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .yellow-box, .blue-box, .lightgreen-box {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #ffffff; /* Add border for better visibility */
+    }
+
+    .text-container h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-family: "Oswald", sans-serif;
+    }
+    
+    .text-container h3 {
+        font-size: 1rem;
+        margin: 0;
+        font-family: "Kalam", cursive
+    }
+    
+    .text-content-fh {
+        padding: 40px 20px;
+    }
+
+    .confg-heading1,
+    .confg-heading2,
+    .confg-heading3,
+    .confg-heading4 {
+        font-size: 1.2rem;
+
+    }
+    
+    .confg-text,
+    .confg-text2,
+    .confg-text3,
+    .confg-text4 {
+        font-size: 1rem;
+       
+    }
+    
+
+
+    .rule-heading1,
+    .rule-heading2,
+    .rule-heading3,
+    .rule-heading4 {
+        font-size: 1.2rem;
+    }
+    
+    .iconss {
+        padding-right: 1rem;
+    }
+    .rule-text,
+    .rule-text2,
+    .rule-text3,
+    .rule-text4 {
+        font-size: 1rem;
+    }
+    
+    .rules-main p {
+        padding-left: 3rem;
+    }
+    
+    
+
+}

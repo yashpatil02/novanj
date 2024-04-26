@@ -170,14 +170,14 @@ color: white; */
   .services-Top {
 
     margin-top: 0%;
-    height: 100vh;
+    height: 80vh;
 
   }
 
   .services-Top {
     &::before {
       margin-top: 0%;
-      height: 100vh !important;
+      height: 80vh !important;
     }
   }
 
@@ -272,21 +272,21 @@ height: 100%;
 @media only screen and (max-width: 425px) {
 
   .ser-top {
-    margin-top: 80%;
+    margin-top: 50%;
 
   }
 
   .services-Top {
 
     margin-top: 0%;
-    height: 100vh;
+    height: 80vh;
 
   }
 
   .services-Top {
     &::before {
       margin-top: 0%;
-      height: 100vh !important;
+      height: 80vh !important;
     }
 
     .services-Row {

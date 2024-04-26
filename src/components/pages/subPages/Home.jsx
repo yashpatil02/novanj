@@ -115,7 +115,7 @@ const Home = () => {
         </div>
 
         <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid />
-        <div className="overlay">
+        <div className="overlays">
           <div className="text-white" data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
             <p className='text-right'>Our advanced video analysis technology allows <br /> for seamless capture of every moment on the field,</p>
           </div>
@@ -211,11 +211,11 @@ const Home = () => {
       </section>
 
 
-      <hr style={{ color: '#27967A', height: '2px' }} />
+      <hr style={{ color: 'black', height: '2px' , margin:0}} />
 
 
       {/* testimonial code is here ------------------------------------- */}
-      <section className='tab-lap'>
+      <div className='tab-lap'>
         <Container>
 
 
@@ -234,35 +234,35 @@ const Home = () => {
             <p className='tablabText'>Dive deep into the intricacies of the game with our user-friendly interface, offering detailed analysis at your fingertips. Whether you're evaluating individual player performance or dissecting team-wide tactics, Catapult Pro Video empowers coaches and teams to make data-driven decisions with confidence.</p>
           </div>
         </Container>
-      </section>
+      </div>
 
-      <hr style={{ color: '#27967A', height: '2px' }} />
+      <hr style={{ color: 'black', height: '2px' , margin:0}} />
 
 
       <section className='assist'>
-  <div>
-    <Container>
-      <Row>
-        <Col md={6} data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
-          <h4 className='teamheading'>Game Insights, Beyond the Surface</h4>
-          <h3 className='teamcon'>Where Numbers Meet Narratives:  Sports Analysis</h3>
-          <p className='teamtext'>Customized Analysis Reports: Elevate your sports strategy with our customized analysis reports. Whether you're a coach looking to optimize team performance or a fantasy sports enthusiast seeking a competitive edge, our tailored reports offer actionable insights and recommendations.</p>
-          <hr />
-        </Col>
-        <Col md={6} data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
-          <img className="laptopbg" src="assets/images/softlapcopy.png" alt="" fluid />
-        </Col>
-      </Row>
-    </Container>
-  </div>
-  <div class="circles">
-  <div class="center-circle"></div>
-</div>
+        <div>
+          <Container>
+            <Row>
+              <Col md={6} data-aos="fade-right" data-aos-duration="1500" data-aos-once="false">
+                <h4 className='teamheading'>Game Insights, Beyond the Surface</h4>
+                <h3 className='teamcon'>Where Numbers Meet Narratives:  Sports Analysis</h3>
+                <p className='teamtext'>Customized Analysis Reports: Elevate your sports strategy with our customized analysis reports. Whether you're a coach looking to optimize team performance or a fantasy sports enthusiast seeking a competitive edge, our tailored reports offer actionable insights and recommendations.</p>
+                <hr />
+              </Col>
+              <Col md={6} data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
+                <img className="laptopbg" src="assets/images/softlapcopy.png" alt="" fluid />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div class="circles">
+          <div class="center-circle"></div>
+        </div>
 
-</section>
+      </section>
 
 
-      <hr style={{ color: '#27967A', height: '2px' }} />
+      <hr style={{ color: '#27967A', height: '2px', margin:0 }} />
 
 
       <section className='content'>
@@ -302,7 +302,7 @@ const Home = () => {
         </div>
       </section>
 
-      <hr style={{ color: '#27967A', height: '2px' }} />
+      <hr style={{ color: '#27967A', height: '2px' , margin:0}} />
       {/* happy clint counter code is here ----------------------------------- */}
 
 

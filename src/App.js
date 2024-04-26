@@ -14,6 +14,11 @@ import About from "./components/pages/subPages/About";
 import Services from "./components/pages/subPages/Services";
 import Contact from "./components/pages/subPages/Contact";
 import Basketball from "./components/pages/Games/Basketball";
+import Fieldhockey from "./components/pages/Games/Fieldhockey";
+import Icehockey from "./components/pages/Games/Icehockey";
+import Netball from "./components/pages/Games/Netball";
+import Soccer from "./components/pages/Games/Soccer";
+import Football from "./components/pages/Games/Football";
 import CustomNavbar from "./components/pages/NavBars";
 import Footer from "./components/pages/Footer";
 function App() {
@@ -39,6 +44,12 @@ function App() {
           <Route path="/Services" element={<Services />} />
           <Route path="/Contact" exact element={<Contact />} />
           <Route path="/Basketball" exact element={<Basketball />} />
+          <Route path="/Fieldhockey" exact element={<Fieldhockey />} />
+          <Route path="/Icehockey" exact element={<Icehockey />} />
+          <Route path="/Netball" exact element={<Netball />} />
+          <Route path="/Soccer" exact element={<Soccer />} />
+          <Route path="/Football" exact element={<Football />} />
+        
         </Routes>
         <Footer />
       </BrowserRouter>
