@@ -1,16 +1,5 @@
 @media only screen and (max-width: 2040px) {
-
-  .bg-image {
-    /* width: 30vw; */
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-60%, -50%);
-    /* You can keep or remove this depending on your requirement */
-  }
-
   .heading1 {
-
     font-size: 13vw;
     position: relative;
     /* top: 170px; */
@@ -40,7 +29,7 @@
   .bg-image {
     width: 30vw;
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-70%, -50%);
 
