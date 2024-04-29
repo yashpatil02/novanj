@@ -45,10 +45,10 @@ function App() {
           <Route path="/Contact" exact element={<Contact />} />
           <Route path="/Basketball" exact element={<Basketball />} />
           <Route path="/Fieldhockey" exact element={<Fieldhockey />} />
-          <Route path="/Icehockey" exact element={<Icehockey />} />
+          {/* <Route path="/Icehockey" exact element={<Icehockey />} />
           <Route path="/Netball" exact element={<Netball />} />
           <Route path="/Soccer" exact element={<Soccer />} />
-          <Route path="/Football" exact element={<Football />} />
+          <Route path="/Football" exact element={<Football />} /> */}
         
         </Routes>
         <Footer />

@@ -57,7 +57,7 @@
     overflow: hidden;
     /* height: 70vh; */
     padding-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding-top: 10rem;
     padding-bottom: 20px;
     display: flex;
@@ -104,7 +104,7 @@ padding-top: 8rem;
     text-align: start;
     display: inline-block;
     font-weight: 600;
-    font-size:2vw;
+    font-size:2rem;
     font-family: "Kalam", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -118,7 +118,7 @@ padding-top: 8rem;
     display: inline-block;
     position: relative;
     font-weight: 600;
-    font-size:1.1vw;
+    font-size:1.1rem;
     /* font-family: "Kalam", cursive;
      */
      font-family: "Source Sans 3", sans-serif;
@@ -138,7 +138,7 @@ padding-top: 8rem;
     margin-left: 25px;
     display: inline-block;
     font-weight: 600;
-    font-size:1.1vw;
+    font-size:1.1rem;
     font-family: "Source Sans 3", sans-serif;
     /* font-weight: 700; */
     font-style: normal;
@@ -198,7 +198,7 @@ padding-top: 8rem;
     text-align: start;
     display: inline-block;
     font-weight: 600;
-    font-size:2vw;
+    font-size:2rem;
     font-family: "Kalam", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -211,7 +211,7 @@ padding-top: 8rem;
     margin-left: 25px;
     display: inline-block;
     font-weight: 600;
-    font-size:1.1vw;
+    font-size:1.1rem;
     font-family: "Source Sans 3", sans-serif;
     /* font-weight: 700; */
     font-style: normal;
@@ -253,7 +253,7 @@ padding-top: 8rem;
 
 
     .about{
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       padding-top: 1rem;
       
   }

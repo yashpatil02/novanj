@@ -2,10 +2,12 @@
 
 /* Add position: relative to the navbar */
 .navbar {
-  background: rgba(255, 255, 255, 0.37);
+  background: white;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.6px);
   -webkit-backdrop-filter: blur(12.6px);
+  position: fixed;
+  z-index:1500;
 }
 
 /* Set z-index for navbar collapse to ensure it appears above other components */
@@ -90,3 +92,71 @@
   }
   
 }
+
+/*-------------------------------------------------- NavBar.css humburger code is here----------------------------------- */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1000; /* Set a high z-index for the desktop navbar */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff; /* Change to white when scrolled */
+}
+
+.navbar-brand img {
+  max-height: 50px; /* Adjust the max-height as needed */
+}
+
+.nav-link {
+  color: #fff; /* Link color */
+}
+
+.nav-link:hover {
+  color: #aaa; /* Hover color */
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Initially hidden */
+  width: 60%; /* Adjust the width as needed */
+  height: 100%;
+  background-color: #fffffff9; /* Mobile navbar background color */
+  padding-top: 1.5rem; /* Match the height of the fixed-top navbar */
+  transition: left 0.7s ease-out;
+  z-index: 1100; /* Set a higher z-index for the mobile navbar */
+  /* border-radius: 10px 10px 12px 50px; */
+}
+
+.mobile-navbar.show {
+  left: 0; /* Show the mobile navbar */
+}
+
+.mobile-navbar .nav-link {
+  color: #fff; /* Mobile navbar link color */
+  font-size: 1rem; /* Adjust the font size as needed */
+  margin-bottom: .7rem;
+  
+}
+
+.mobile-navbar .nav-link:hover {
+  color: #c80000; /* Mobile navbar link hover color */
+}
+.mobile-navbar .dropdown-menu {
+  padding: 0rem 0; /* Adjust padding as needed */
+}
+
+.mobile-navbar .dropdown-item {
+  padding: 0rem 2rem; /* Adjust padding as needed */
+}
+.hamburger-icon {
+  color: #ff0000;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  z-index: 1200; /* Set an even higher z-index for the hamburger icon */
+}
+

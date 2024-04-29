@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './Services.css'; // Import your CSS file for custom styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faTruckFast, faAward, faBasketball, faAddress, Card, faDatabase, faArrowsLeftRightToLine, faAddressCard, faVideo, faMagnifyingGlassChart, faSquarePollVertical, faTv, faChartLine, faChartPie, faVolleyball } from '@fortawesome/free-solid-svg-icons';
+import { faTruckFast, faAward, faBasketball, faAddress, Card, faDatabase,faArrowAltCircleUp, faArrowsLeftRightToLine, faAddressCard, faVideo, faMagnifyingGlassChart, faSquarePollVertical, faTv, faChartLine, faChartPie, faVolleyball } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ServicesMideaQueri.css';
 
 const Services = () => {
+
+  const [showBackToTop, setShowBackToTop] = useState(false);
   // Define the content array with objects representing each row
   useEffect(() => {
     AOS.init();
@@ -25,6 +27,30 @@ const Services = () => {
 
 
   });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
 
   return (
     <>
@@ -43,18 +69,18 @@ const Services = () => {
         <Row className="services-Row justify-content-around m-3 p-5 ">
           <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
             <FontAwesomeIcon icon={faBasketball} className="fs" />
-            <h className="fsh">Games</h>
+            <h1 className="fsh">Games</h1>
             <p className="fsp">Cricket, football, basketball, hockey, and ice hockey are prominent sports with diverse fan bases and unique gameplay.</p>
           </Col>
           <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
             <FontAwesomeIcon icon={faAward} className="fs" />
-            <h className="fsh">Award</h>
+            <h1 className="fsh">Award</h1>
 
             <p className="fsp">Novanj Company was honored with prestigious awards for innovation, excellence, and outstanding contributions in its field.</p>
           </Col>
           <Col md={3} className="d-flex flex-column align-items-center p-5 custom-col">
             <FontAwesomeIcon icon={faTruckFast} className="fs" />
-            <h className="fsh">Product</h>
+            <h1 className="fsh">Product</h1>
 
             <p className="fsp">Novanj Company provides innovative software, hardware, and tech solutions to boost efficiency and productivity across industries.</p>
           </Col>
@@ -194,6 +220,9 @@ const Services = () => {
 
         </div>
       </Container>
+      <div className={`back-to-top ${showBackToTop ? 'show' : ''}`} onClick={scrollToTop}>
+            <FontAwesomeIcon icon={faArrowAltCircleUp} />
+          </div>
     </>
   );
 }

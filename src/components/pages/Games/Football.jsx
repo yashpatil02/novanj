@@ -23,7 +23,7 @@ const Football = () => {
               transition: 'width 1s ease' // Transition for smooth animation
             }}
           />
-          <h3 className={footBallStyle.fhH3}>Charge into Action: <br />Where Football Springs to Life!</h3>
+          <h3 className={footBallStyle.fhH3}>Charge into Action: <br />Where  <span style={{color:"orange",fontSize:'3rem', fontWeight:'500'}}>Football</span> Springs to Life!</h3>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Football = () => {
           </Row>
         </Container>
       </section>
-      <Container fluid className={footBallStyle.footFirstCont}>
+      {/* <Container fluid className={footBallStyle.footFirstCont}>
         <Row className={footBallStyle.footFirstRow}>
           <Col md={4} ms={12} className={footBallStyle.footFirstColA} >
             <h3>Let video and data coaching</h3>
@@ -64,7 +64,7 @@ const Football = () => {
           </Col>
           <Col md={8} ms={12} className={footBallStyle.footFirstColB}></Col>
         </Row>
-      </Container>
+      </Container> */}
       <section>
         <Container className={footBallStyle.rulesMain}>
           <Row>

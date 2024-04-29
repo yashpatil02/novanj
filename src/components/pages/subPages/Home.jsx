@@ -114,7 +114,7 @@ const Home = () => {
           <span className='analysis ps-4'>Analysis</span>
         </div>
 
-        <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid />
+        <img className="bg-image img-fluid" src="assets/images/pngwing.png" alt="" fluid='true' />
         <div className="overlays">
           <div className="text-white" data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
             <p className='text-right'>Our advanced video analysis technology allows <br /> for seamless capture of every moment on the field,</p>
@@ -229,7 +229,7 @@ const Home = () => {
 
           <div className='tabLabDiv'>
 
-            <img className="" src="assets/images/tabLab2.png" alt="" fluid data-aos="fade-left" data-aos-duration="1500" data-aos-once="false" />
+            <img className="" src="assets/images/tabLab2.png" alt="" fluid="true" data-aos="fade-left" data-aos-duration="1500" data-aos-once="false" />
             {/* <img  src="assets/images/pngwing.png" alt="" fluid /> */}
             <p className='tablabText'>Dive deep into the intricacies of the game with our user-friendly interface, offering detailed analysis at your fingertips. Whether you're evaluating individual player performance or dissecting team-wide tactics, Catapult Pro Video empowers coaches and teams to make data-driven decisions with confidence.</p>
           </div>
@@ -250,13 +250,13 @@ const Home = () => {
                 <hr />
               </Col>
               <Col md={6} data-aos="fade-up-left" data-aos-duration="1500" data-aos-once="false">
-                <img className="laptopbg" src="assets/images/softlapcopy.png" alt="" fluid />
+                <img className="laptopbg" src="assets/images/softlapcopy.png" alt="" fluid="true" />
               </Col>
             </Row>
           </Container>
         </div>
-        <div class="circles">
-          <div class="center-circle"></div>
+        <div className="circles">
+          <div className="center-circle"></div>
         </div>
 
       </section>
@@ -276,7 +276,7 @@ const Home = () => {
             <Row>
               <Col md={4} >
                 <div >
-                  <i class="fa-solid fa-chart-pie "></i>
+                  <i className="fa-solid fa-chart-pie "></i>
                   <h4 className='show1 mx-4'>Advanced Player Movement Analysis:</h4>
                   <p className='showtext mx-4'>Novanj is at the forefront of revolutionizing sports game analysis through cutting-edge techniques and comprehensive data insights. By delving deep into player movements, scores, and every aspect of the game, Novanj provides invaluable insights that drive performance enhancement and strategic decision-making. Let's explore why Novanj stands out in this domain.
                   </p>
@@ -284,14 +284,14 @@ const Home = () => {
               </Col>
               <Col md={4}>
                 <div>
-                  <i class="fa-solid fa-chart-pie "></i>
+                  <i className="fa-solid fa-chart-pie "></i>
                   <h4 className='show1 mx-4'>Comprehensive Performance Metrics:</h4>
                   <p className='showtext mx-4'>Novanj employs state-of-the-art technology to capture and analyze player movements with unparalleled precision. Using techniques such as computer vision and motion tracking, Novanj records every step, sprint, and pivot on the field, providing coaches and analysts with a granular understanding of player dynamics. This level of detail enables teams to optimize player strategies, identify areas for improvement, and maximize on-field performance.  </p>
                 </div>
               </Col>
               <Col md={4} >
                 <div>
-                  <i class="fa-solid fa-chart-pie "></i>
+                  <i className="fa-solid fa-chart-pie "></i>
                   <h4 className='show1 '> Real-time Insights and Feedback:</h4>
                   <p className='showtext mx-4'>Novanj goes beyond traditional performance metrics to provide a comprehensive analysis of player and team dynamics. From basic statistics like goals scored and assists to advanced metrics such as expected goals (xG), player heatmaps, and passing networks, Novanj offers a holistic view of the game. These insights empower coaches to fine-tune tactics, identify key strengths and weaknesses, and devise game-winning strategies. </p>
                 </div>
