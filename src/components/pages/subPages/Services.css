@@ -136,7 +136,7 @@
   font-weight: 400;
   /* font-style: oblique; */
   font-family: 'Poppins', sans-serif;
-  color: rgba(0, 0, 0, 0.805);
+  color: var(--p-text-color);
 }
 
 .wave-img {
@@ -167,6 +167,7 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 5px;
+  color: var(--p-text-color);
 }
 
 .rxpo-div {
@@ -243,6 +244,7 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  color: var(--p-text-color);
 }
 
 .services-contaniner {

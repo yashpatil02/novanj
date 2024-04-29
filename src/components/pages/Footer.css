@@ -24,7 +24,7 @@ o .footer-content {
 
 
 .footer-heading {
-  color: #27967A;
+  color: var(--primary-color);
   font-family: "Rubik", sans-serif;
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -235,7 +235,7 @@ color: #27967A;
 @media only screen and (max-width: 768px) {
 
   .footer-heading {
-    color: #27967A;
+    color: var(--primary-color);
     font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
     margin-top: 1rem;
@@ -315,7 +315,7 @@ color: #27967A;
   
 }
 .games-list li:hover {
-color: #27967A;
+  color: var(--primary-color);
 }
 
 .contact-list li {

@@ -43,7 +43,7 @@
     right: 10%;
     /* Adjust the right position of the text */
     transform: translateY(-50%);
-    color: #ffffff;
+    color: var(--white-color);
     font-family: "Oswald", sans-serif
 }
 
@@ -115,7 +115,7 @@
 .confg-heading4 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--white-color);
     /* Adjust text color as needed */
     text-align: start;
     font-family: "Rubik", sans-serif;
@@ -126,7 +126,7 @@
 .confg-text3,
 .confg-text4 {
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--white-color);
     /* Adjust text color as needed */
     text-align: start;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -135,7 +135,7 @@
 }
 
 .info-fh {
-    background-color: #27967A;
+    background-color: var(--primary-color);
 }
 
 .rules-main {
@@ -149,7 +149,7 @@
 .rule-heading4 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #27967A;
+    color: var(--primary-color);
     /* Adjust text color as needed */
     text-align: start;
     font-family: "Rubik", sans-serif;
@@ -203,7 +203,7 @@
     background-color: skyblue;
 }
 .lightgreen-box{
-    background-color: #27967A;
+    background-color: var(--primary-color);
 }
 
 

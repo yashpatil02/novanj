@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* You may need to adjust text color for better visibility */
+  color: var(--white-color); /* You may need to adjust text color for better visibility */
 }
 
 /* Color boxes */
@@ -36,7 +36,7 @@
     background-color: skyblue;
 }
 .lightgreen-box{
-    background-color: #27967A;
+  background-color: var(--primary-color);
 }
 
 /* .ntext {
@@ -55,14 +55,14 @@
     background: transparent;
     border: 2px solid whitesmoke;
     position: relative;
-    color: white;
+    color:  var(--white-color);
     font-size: 1.4rem;
     top: 38%;
 }
 
 .bs-text {
     position: relative;
-    color: white;
+    color:  var(--white-color);
     font-size: 1.8rem;
     margin-left: 18%;
     margin-right: 18%;
@@ -79,7 +79,7 @@
     font-family: "Rubik", sans-serif;
     font-style: normal;
     position: relative;
-    color: white;
+    color:  var(--white-color);
     top: 28%;
 }
 
@@ -119,7 +119,7 @@
 .con-heading4 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ffffff;
+    color:  var(--white-color);
     /* Adjust text color as needed */
     text-align: start;
     font-family: "Rubik", sans-serif;
@@ -130,7 +130,7 @@
 .con-text3,
 .con-text4 {
     font-size: 1rem;
-    color: #ffffff;
+    color:  var(--white-color);
     /* Adjust text color as needed */
     text-align: start;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -139,7 +139,7 @@
 }
 
 .info-bs {
-    background-color: #27967A;
+    background-color: var(--primary-color);
 }
 
 

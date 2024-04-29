@@ -10,6 +10,7 @@ import './MediaQueri.css'
 import { TweenMax, Expo } from 'gsap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './Root.css';
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
